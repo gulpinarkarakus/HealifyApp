@@ -4,11 +4,12 @@ plugins {
 }
 
 android {
+    
     namespace = "com.example.healifyapp"
     compileSdk {
         version = release(36)
     }
-
+    
     defaultConfig {
         applicationId = "com.example.healifyapp"
         minSdk = 24
@@ -34,6 +35,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 

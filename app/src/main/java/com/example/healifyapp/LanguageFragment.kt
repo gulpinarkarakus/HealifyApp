@@ -1,3 +1,4 @@
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +7,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.healifyapp.R
+import java.util.Locale
 
 class LanguageFragment : Fragment() {
 
@@ -19,13 +21,32 @@ class LanguageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        // TÜRKÇE SEÇİMİ
         view.findViewById<Button>(R.id.btnTurkish).setOnClickListener {
+            setLocale("tr")
             findNavController().navigate(R.id.action_languageFragment_to_loginFragment)
         }
 
+        // İNGİLİZCE SEÇİMİ
         view.findViewById<Button>(R.id.btnEnglish).setOnClickListener {
+            setLocale("en")
             findNavController().navigate(R.id.action_languageFragment_to_loginFragment)
         }
+    }
+
+    // --------- DİL DEĞİŞTİRME FONKSİYONU ---------
+    private fun setLocale(languageCode: String) {
+        val locale = Locale(languageCode)
+        Locale.setDefault(locale)
+
+        val config = resources.configuration
+        config.setLocale(locale)
+
+        // Seçilen dili kaydet
+        val prefs = requireContext().getSharedPreferences("settings", Context.MODE_PRIVATE)
+        prefs.edit().putString("app_language", languageCode).apply()
+
+        // Uygulamayı güncelle (zorunlu)
+        activity?.recreate()
     }
 }

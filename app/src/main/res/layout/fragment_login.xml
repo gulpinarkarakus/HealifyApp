@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- TABBAR -->
-    <include
-        android:id="@+id/tabbar_include"
-        layout="@layout/tabbar"/>
-
-    <!-- CONTENT -->
     <LinearLayout
         android:orientation="vertical"
         android:padding="20dp"
@@ -21,13 +16,13 @@
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="E-mail"/>
+            android:hint="@string/email"/>
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Şifre"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:layout_marginTop="10dp"/>
 
@@ -35,8 +30,10 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Giriş Yap"
-            android:layout_marginTop="20dp"/>
+            android:text="@string/login"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/consept_color"/>
+
     </LinearLayout>
 
 </LinearLayout>
