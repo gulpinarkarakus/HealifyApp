@@ -3,11 +3,9 @@ package com.example.healifyapp
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.net.wifi.WifiManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -19,8 +17,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 import androidx.navigation.findNavController
-import androidx.navigation.NavController
-import com.example.healifyapp.R
+
 
 
 // Handler nesnesini ve Görev değişkenini sınıf dışında global olarak tanımlıyoruz
@@ -169,9 +166,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 // Language Fragment’ta → IntroFragment'a dön
-                R.id.languageFragment -> {
-                    navController.navigate(R.id.introFragment)
-                }
 
                 // Diğer fragment'lar için normal davranış
                 else -> {
@@ -198,20 +192,6 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment)
 
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            when (destination.id) {
-                R.id.introFragment -> {
-                    binding.backButton.visibility = View.GONE
-                    binding.titleHealify.visibility = View.GONE
-                    binding.titleHealify2.visibility = View.VISIBLE
-                }
-                else -> {
-                    binding.backButton.visibility = View.VISIBLE
-                    binding.titleHealify2.visibility = View.GONE
-                    binding.titleHealify.visibility = View.VISIBLE
-                }
-            }
-        }
     }
 
 

@@ -3,10 +3,19 @@
     <string name="hello_blank_fragment">Merhaba boş fragment</string>
     <string name="healify">Healify</string>
     <string name="healify2">Healify</string>
+
     <string name="select_language">Dil Seçiniz</string>
+
     <string name="turkish">Türkçe</string>
     <string name="english">İngilizce</string>
+    <string name="deutsch">Almanca</string>
+    <string name="arabic">Arapça</string>
+
     <string name="login">Giriş Yap</string>
     <string name="password">Şifre</string>
     <string name="email">E-posta</string>
+
+    <string name="please_select_a_language_to_continue">
+        Devam etmek için lütfen bir dil seçiniz
+    </string>
 </resources>

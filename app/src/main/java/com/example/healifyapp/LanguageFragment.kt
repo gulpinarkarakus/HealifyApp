@@ -32,6 +32,20 @@ class LanguageFragment : Fragment() {
             setLocale("en")
             findNavController().navigate(R.id.action_languageFragment_to_loginFragment)
         }
+
+        view.findViewById<Button>(R.id.btnGerman).setOnClickListener {
+            setLocale("de")
+            findNavController().navigate(R.id.action_languageFragment_to_loginFragment)
+        }
+
+//        view.findViewById<Button>(R.id.btnArabic).setOnClickListener {
+//            setLocale("ar")
+//            findNavController().navigate(R.id.action_languageFragment_to_loginFragment)
+//        }
+
+//        view.findViewById<Button>(R.id.newUserSignup).setOnClickListener {
+//            findNavController().navigate(R.id.action_loginFragment_to_newUserLoginFragment)
+//        }
     }
 
     // --------- DİL DEĞİŞTİRME FONKSİYONU ---------

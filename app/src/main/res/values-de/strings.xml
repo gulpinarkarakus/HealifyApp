@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HealifyApp</string>
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="healify">Healify</string>
+    <string name="healify2">Healify</string>
+
+    <string name="select_language">Sprache wählen</string>
+
+    <string name="turkish">Türkisch</string>
+    <string name="english">Englisch</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="arabic">Arabisch</string>
+
+    <string name="login">Anmelden</string>
+    <string name="password">Passwort</string>
+    <string name="email">E-Mail</string>
+
+    <string name="please_select_a_language_to_continue">
+        Bitte wählen Sie eine Sprache, um fortzufahren
+    </string>
+</resources>

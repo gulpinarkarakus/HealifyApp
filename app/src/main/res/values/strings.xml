@@ -9,5 +9,13 @@
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="please_select_a_language_to_continue">Please select a language to continue</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="arabic">العربية</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_user_sign_up">New user sign up</string>
+    <string name="register">register</string>
+    <string name="name_surname">Name Surname</string>
+    <string name="welcome_to_healify">Welcome to Healify</string>
 
 </resources>
