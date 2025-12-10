@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_loginFragment_to_newUserLoginFragment"
             app:destination="@id/newUserLoginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/newUserLoginFragment"
@@ -27,4 +30,8 @@
             android:id="@+id/action_newUserLoginFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.healifyapp.HomeFragment"
+        android:label="HomeFragment" />
 </navigation>

@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.healifyapp.R
@@ -43,9 +44,6 @@ class LanguageFragment : Fragment() {
 //            findNavController().navigate(R.id.action_languageFragment_to_loginFragment)
 //        }
 
-//        view.findViewById<Button>(R.id.newUserSignup).setOnClickListener {
-//            findNavController().navigate(R.id.action_loginFragment_to_newUserLoginFragment)
-//        }
     }
 
     // --------- DİL DEĞİŞTİRME FONKSİYONU ---------
