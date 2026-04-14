@@ -14,23 +14,21 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val recyclerView = view.findViewById<RecyclerView>(R.id.homeRecycler)
 
         val list = listOf(
-            CardItem("Dr. Ahmet", "Kardiyoloji"),
-            CardItem("Dr. Ayşe", "Dermatoloji"),
-            CardItem("Dr. Mehmet", "Nöroloji"),
-            CardItem("Dr. Elif", "Ortopedi"),
-            CardItem("Dr. Ali", "Göz Hastalıkları")
+            CardItem("Saç Ekimi", R.drawable.drawable_hair),
+            CardItem("Rinoplasti", R.drawable.drawable_rinoplasti),
+            CardItem("Liposuction", R.drawable.drawable_liposuction),
+            CardItem("Dudak Dolgusu", R.drawable.drawable_lips),
+            CardItem("Göz Kapağı Estetiği", R.drawable.drawable_eye),
+            CardItem("Yüz Germe", R.drawable.drawable_face)
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.setHasFixedSize(true)
 
-        // Adapter ile tıklama listener ekliyoruz
         recyclerView.adapter = CardAdapter(list) { selectedItem ->
             val action = HomeFragmentDirections
-                .actionHomeFragmentToDetailFragment(
-                    selectedItem.title,
-                    selectedItem.desc
-                )
+                .actionHomeFragmentToDetailFragment(selectedItem.title)
+
             findNavController().navigate(action)
         }
     }

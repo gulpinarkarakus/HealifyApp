@@ -46,8 +46,6 @@
         <argument
             android:name="doctorName"
             app:argType="string" />
-        <argument
-            android:name="doctorSpecialty"
-            app:argType="string" />
+
     </fragment>
 </navigation>
