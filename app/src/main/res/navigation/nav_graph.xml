@@ -32,14 +32,6 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.healifyapp.HomeFragment"
-        android:label="HomeFragment" >
-        <action
-            android:id="@+id/action_homeFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.healifyapp.DetailFragment"
         android:label="Detail">
@@ -47,5 +39,27 @@
             android:name="doctorName"
             app:argType="string" />
 
+        <action
+            android:id="@+id/action_detailFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.healifyapp.BookingFragment"
+        android:label="BookingFragment" >
+
+        <argument
+            android:name="selectedDoctor"
+            app:argType="com.example.healifyapp.DoctorProfileBooking" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.healifyapp.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
 </navigation>
