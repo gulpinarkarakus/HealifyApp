@@ -79,5 +79,61 @@
         <action
             android:id="@+id/action_calendarFragment_to_bookingFragment"
             app:destination="@id/bookingFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_flightFragment"
+            app:destination="@id/flightFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/flightFragment"
+        android:name="com.example.healifyapp.FlightFragment"
+        android:label="FlightFragment"
+        tools:layout="@layout/fragment_flight">
+        <argument android:name="category"          app:argType="string" />
+        <argument android:name="appointmentMillis" app:argType="long" />
+        <argument android:name="appointmentTime"   app:argType="string" />
+        <argument android:name="doctorName"        app:argType="string" />
+        <action
+            android:id="@+id/action_flightFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.example.healifyapp.TransferFragment"
+        android:label="TransferFragment"
+        tools:layout="@layout/fragment_transfer">
+        <argument android:name="arrivalMillis" app:argType="long" />
+        <argument android:name="doctorName"    app:argType="string" />
+        <argument android:name="category"      app:argType="string" />
+        <action
+            android:id="@+id/action_transferFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.example.healifyapp.HotelFragment"
+        android:label="HotelFragment"
+        tools:layout="@layout/fragment_hotel">
+        <action
+            android:id="@+id/action_hotelFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.healifyapp.SummaryFragment"
+        android:label="SummaryFragment"
+        tools:layout="@layout/fragment_summary">
+        <action
+            android:id="@+id/action_summaryFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.healifyapp.PaymentFragment"
+        android:label="PaymentFragment"
+        tools:layout="@layout/fragment_payment" />
 </navigation>

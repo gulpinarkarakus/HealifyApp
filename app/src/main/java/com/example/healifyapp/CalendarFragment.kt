@@ -1,69 +1,246 @@
 package com.example.healifyapp
 
-import android.app.TimePickerDialog
+import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.CalendarView
+import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import java.util.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.button.MaterialButton
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 class CalendarFragment : Fragment(R.layout.fragment_calendar) {
 
     private val args: CalendarFragmentArgs by navArgs()
+    private lateinit var doctor: DoctorProfileBooking
 
-    private var selectedDate: String = ""
+    private var selectedDate: Calendar? = null
     private var selectedTime: String = ""
+    private var selectedTimeView: TextView? = null
+    private var allDates: List<Calendar> = emptyList()
+    private var weekOffset = 0
+
+    private lateinit var tvMonthYear: TextView
+    private lateinit var rvDates: RecyclerView
+    private lateinit var cardSummary: CardView
+    private lateinit var tvSummaryDate: TextView
+    private lateinit var tvSummaryTime: TextView
+    private lateinit var btnCreate: Button
+    private lateinit var layoutSuccess: LinearLayout
+    private lateinit var tvSuccessDetails: TextView
+    private lateinit var tvStayDuration: TextView
+    private lateinit var btnPlanFlight: MaterialButton
+
+    private val unavailableSlots = setOf("09:30", "11:00", "14:00", "16:30")
+    private val morningSlots = listOf("09:00", "09:30", "10:00", "10:30", "11:00", "11:30")
+    private val afternoonSlots = listOf(
+        "13:00", "13:30", "14:00", "14:30",
+        "15:00", "15:30", "16:00", "16:30", "17:00"
+    )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val doctor = args.selectedDoctor
+        doctor = args.selectedDoctor
+        view.findViewById<TextView>(R.id.tvDoctorName).text = doctor.name
 
-        val tvDoctorName = view.findViewById<TextView>(R.id.tvDoctorName)
-        val calendarView = view.findViewById<CalendarView>(R.id.calendarView)
-        val tvSelectedDate = view.findViewById<TextView>(R.id.tvSelectedDate)
-        val btnSelectTime = view.findViewById<Button>(R.id.btnSelectTime)
-        val tvSelectedTime = view.findViewById<TextView>(R.id.tvSelectedTime)
-        val btnCreateAppointment = view.findViewById<Button>(R.id.btnCreateAppointment)
+        tvMonthYear = view.findViewById(R.id.tvMonthYear)
+        rvDates = view.findViewById(R.id.rvDates)
+        cardSummary = view.findViewById(R.id.cardSummary)
+        tvSummaryDate = view.findViewById(R.id.tvSummaryDate)
+        tvSummaryTime = view.findViewById(R.id.tvSummaryTime)
+        btnCreate = view.findViewById(R.id.btnCreateAppointment)
+        layoutSuccess = view.findViewById(R.id.layoutSuccess)
+        tvSuccessDetails = view.findViewById(R.id.tvSuccessDetails)
+        tvStayDuration = view.findViewById(R.id.tvStayDuration)
+        btnPlanFlight = view.findViewById(R.id.btnPlanFlight)
 
-        tvDoctorName.text = doctor.name
+        allDates = generateDates()
+        rvDates.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        loadWeek()
 
-        calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
-            selectedDate = "$dayOfMonth/${month + 1}/$year"
-            tvSelectedDate.text = "Seçilen Tarih: $selectedDate"
+        view.findViewById<ImageButton>(R.id.btnPrevWeek).setOnClickListener {
+            if (weekOffset > 0) { weekOffset--; loadWeek() }
+        }
+        view.findViewById<ImageButton>(R.id.btnNextWeek).setOnClickListener {
+            val maxWeek = (allDates.size - 1) / 5
+            if (weekOffset < maxWeek) { weekOffset++; loadWeek() }
         }
 
-        btnSelectTime.setOnClickListener {
-            val calendar = Calendar.getInstance()
-            val hour = calendar.get(Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(Calendar.MINUTE)
+        setupTimeGrid(view)
+        btnCreate.setOnClickListener { onBookAppointment() }
+    }
 
-            val timePicker = TimePickerDialog(
-                requireContext(),
-                { _, selectedHour, selectedMinute ->
-                    selectedTime = "$selectedHour:$selectedMinute"
-                    tvSelectedTime.text = "Seçilen Saat: $selectedTime"
-                },
-                hour,
-                minute,
-                true
-            )
+    private fun loadWeek() {
+        val start = weekOffset * 5
+        val end = minOf(start + 5, allDates.size)
+        val weekDates = if (start < allDates.size) allDates.subList(start, end) else emptyList()
 
-            timePicker.show()
+        rvDates.adapter = DateChipAdapter(weekDates) { date ->
+            selectedDate = date
+            updateMonthYear(date)
+            updateSummary()
         }
+        if (weekDates.isNotEmpty()) updateMonthYear(weekDates[0])
+    }
 
-        btnCreateAppointment.setOnClickListener {
-
-            if (selectedDate.isEmpty() || selectedTime.isEmpty()) {
-                tvSelectedDate.text = "Lütfen tarih ve saat seçin!"
-                return@setOnClickListener
+    private fun generateDates(): List<Calendar> {
+        val dates = mutableListOf<Calendar>()
+        val cal = Calendar.getInstance().apply {
+            set(Calendar.HOUR_OF_DAY, 0); set(Calendar.MINUTE, 0)
+            set(Calendar.SECOND, 0); set(Calendar.MILLISECOND, 0)
+        }
+        repeat(35) {
+            val dow = cal.get(Calendar.DAY_OF_WEEK)
+            if (dow != Calendar.SATURDAY && dow != Calendar.SUNDAY) {
+                dates.add(cal.clone() as Calendar)
             }
+            cal.add(Calendar.DAY_OF_MONTH, 1)
+        }
+        return dates
+    }
 
-            tvSelectedDate.text = "Randevu Alındı "
-            tvSelectedTime.text = "$selectedDate - $selectedTime"
+    private fun setupTimeGrid(view: View) {
+        val container = view.findViewById<LinearLayout>(R.id.timeSlotContainer)
+        container.removeAllViews()
+        addSectionLabel(container, "Sabah")
+        addTimeRow(container, morningSlots)
+        addSectionLabel(container, "Öğleden Sonra")
+        addTimeRow(container, afternoonSlots)
+    }
+
+    private fun addSectionLabel(container: LinearLayout, text: String) {
+        container.addView(TextView(requireContext()).apply {
+            this.text = text
+            textSize = 13f
+            setTextColor(0xFF888888.toInt())
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).also { it.setMargins(0, dp(12), 0, dp(8)) }
+        })
+    }
+
+    private fun addTimeRow(container: LinearLayout, slots: List<String>) {
+        slots.chunked(3).forEach { rowSlots ->
+            val row = LinearLayout(requireContext()).apply {
+                orientation = LinearLayout.HORIZONTAL
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).also { it.setMargins(0, 0, 0, dp(10)) }
+            }
+            rowSlots.forEach { time ->
+                val isUnavailable = unavailableSlots.contains(time)
+                row.addView(TextView(requireContext()).apply {
+                    this.text = time
+                    textSize = 14f
+                    gravity = android.view.Gravity.CENTER
+                    setPadding(0, dp(13), 0, dp(13))
+                    setTextColor(if (isUnavailable) 0xFFBBBBBB.toInt() else 0xFF3A7BD5.toInt())
+                    setBackgroundResource(
+                        if (isUnavailable) R.drawable.bg_time_slot_unavailable
+                        else R.drawable.bg_time_slot_default
+                    )
+                    if (isUnavailable) paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+                    layoutParams = LinearLayout.LayoutParams(
+                        0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f
+                    ).also { it.setMargins(0, 0, dp(8), 0) }
+                    if (!isUnavailable) setOnClickListener { onTimeSelected(this, time) }
+                })
+            }
+            repeat(3 - rowSlots.size) {
+                row.addView(View(requireContext()).apply {
+                    layoutParams = LinearLayout.LayoutParams(0, dp(46), 1f)
+                        .also { it.setMargins(0, 0, dp(8), 0) }
+                })
+            }
+            container.addView(row)
         }
     }
+
+    private fun onTimeSelected(tv: TextView, time: String) {
+        selectedTimeView?.apply {
+            setBackgroundResource(R.drawable.bg_time_slot_default)
+            setTextColor(0xFF3A7BD5.toInt())
+        }
+        tv.setBackgroundResource(R.drawable.bg_time_slot_selected)
+        tv.setTextColor(0xFFFFFFFF.toInt())
+        selectedTimeView = tv
+        selectedTime = time
+        updateSummary()
+    }
+
+    private fun updateSummary() {
+        if (selectedDate != null) {
+            cardSummary.visibility = View.VISIBLE
+            val fmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale("tr"))
+            tvSummaryDate.setTextColor(0xFF1A1A1A.toInt())
+            tvSummaryDate.text = fmt.format(selectedDate!!.time)
+            tvSummaryTime.text = if (selectedTime.isEmpty()) "Saat seçilmedi" else "Saat: $selectedTime"
+        } else {
+            cardSummary.visibility = View.GONE
+        }
+    }
+
+    private fun onBookAppointment() {
+        if (selectedDate == null) {
+            cardSummary.visibility = View.VISIBLE
+            tvSummaryDate.setTextColor(0xFFE53935.toInt())
+            tvSummaryDate.text = "Lütfen bir tarih seçin"
+            tvSummaryTime.text = ""
+            return
+        }
+        if (selectedTime.isEmpty()) {
+            cardSummary.visibility = View.VISIBLE
+            tvSummaryDate.setTextColor(0xFFE53935.toInt())
+            tvSummaryDate.text = "Lütfen bir saat seçin"
+            tvSummaryTime.text = ""
+            return
+        }
+
+        val fmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale("tr"))
+        tvSuccessDetails.text = "${fmt.format(selectedDate!!.time)}\nSaat $selectedTime"
+
+        val stayDays = procedureStayDays[doctor.category] ?: Pair(5, 7)
+        tvStayDuration.text =
+            "${doctor.category} için randevu tarihinden itibaren ${stayDays.first}-${stayDays.second} gün Türkiye'de kalmanız önerilir."
+
+        BookingState.doctorName = doctor.name
+        BookingState.category = doctor.category
+        BookingState.appointmentDateMillis = selectedDate!!.timeInMillis
+        BookingState.appointmentTime = selectedTime
+        BookingState.stayDays = stayDays.second
+
+        btnPlanFlight.setOnClickListener {
+            val action = CalendarFragmentDirections.actionCalendarFragmentToFlightFragment(
+                category = doctor.category,
+                appointmentMillis = selectedDate!!.timeInMillis,
+                appointmentTime = selectedTime,
+                doctorName = doctor.name
+            )
+            findNavController().navigate(action)
+        }
+
+        layoutSuccess.visibility = View.VISIBLE
+        cardSummary.visibility = View.GONE
+        btnCreate.isEnabled = false
+        btnCreate.alpha = 0.4f
+    }
+
+    private fun updateMonthYear(cal: Calendar) {
+        val fmt = SimpleDateFormat("MMMM yyyy", Locale("tr"))
+        tvMonthYear.text = fmt.format(cal.time).replaceFirstChar { it.uppercase() }
+    }
+
+    private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
 }

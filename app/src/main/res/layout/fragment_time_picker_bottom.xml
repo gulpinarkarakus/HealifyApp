@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_sheet"
+    android:paddingBottom="32dp">
+
+    <!-- Drag handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="#CCCCCC"
+        android:backgroundTint="#CCCCCC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="İniş Saatini Seçin"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A1A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="Uçağın iniş saatini giriniz"
+        android:textSize="13sp"
+        android:textColor="#AAAAAA" />
+
+    <!-- Pickers row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Hour block -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_picker_block">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAAT"
+                android:textColor="#3A7BD5"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="4dp" />
+            <NumberPicker
+                android:id="@+id/npHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#CCCCCC"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- Minute block -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_picker_block">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAKİKA"
+                android:textColor="#3A7BD5"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="4dp" />
+            <NumberPicker
+                android:id="@+id/npMinute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirmTime"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Onayla"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#3A7BD5"
+        android:textColor="@android:color/white"
+        app:cornerRadius="14dp" />
+
+</LinearLayout>

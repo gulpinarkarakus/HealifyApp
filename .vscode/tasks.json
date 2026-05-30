@@ -1,0 +1,116 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build HealifyApp",
+			"type": "shell",
+			"command": "./gradlew",
+			"args": [
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Install JDK and Build HealifyApp",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"scripts/install_jdk_build.sh"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Install JDK and Build HealifyApp",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"scripts/install_jdk_build.sh"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Install JDK and Build HealifyApp",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"scripts/install_jdk_build.sh"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Install JDK and Build HealifyApp",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"scripts/install_jdk_build.sh"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Build HealifyApp with installed JDK",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"-lc",
+				"export JAVA_HOME=\"$HOME/jdk/current\" && cd /Users/gp/HealifyApp && ./gradlew build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Assemble Debug APK with JDK",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"-lc",
+				"export JAVA_HOME=\"$HOME/jdk/current\" && cd /Users/gp/HealifyApp && ./gradlew assembleDebug -x lint"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gradle"
+			]
+		},
+		{
+			"label": "Check ADB devices",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"-lc",
+				"export ANDROID_SDK_ROOT=\"$HOME/Library/Android/sdk\" && export PATH=\"$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator:$PATH\" && adb devices"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$shell"
+			]
+		},
+		{
+			"label": "Start AVD and Install APK",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"scripts/start_avd_and_install.sh"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$shell"
+			]
+		}
+	]
+}

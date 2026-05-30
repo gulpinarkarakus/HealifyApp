@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- Header -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#3A7BD5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚗  Hastane Transferi"
+                    android:textColor="#B3D4FF"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/tvTransferDoctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Info card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✈"
+                    android:textSize="22sp"
+                    android:layout_marginEnd="12dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Havalimanından kliniğimize özel, konforlu ve ücretsiz transfer hizmetimizden yararlanabilirsiniz."
+                    android:textColor="#555555"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="3dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Arrival date -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#FFFFFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALIŞ TARİHİ"
+                    android:textColor="#AAAAAA"
+                    android:textSize="11sp"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/tvTransferArrivalDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1A1A1A"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İstanbul Havalimanı → Healify Estetik Merkezi"
+                    android:textColor="#3A7BD5"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Time input card (modern) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İNİŞ SAATİNİZ"
+                        android:textColor="#AAAAAA"
+                        android:textSize="11sp"
+                        android:letterSpacing="0.1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dokunarak seçin"
+                        android:textColor="#3A7BD5"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Big time display blocks -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_picker_block">
+                        <TextView
+                            android:id="@+id/tvHourDisplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            android:textColor="#3A7BD5" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAAT"
+                            android:textSize="10sp"
+                            android:textColor="#888888"
+                            android:letterSpacing="0.06" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="#CCCCCC"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_picker_block">
+                        <TextView
+                            android:id="@+id/tvMinuteDisplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            android:textColor="#3A7BD5" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAK."
+                            android:textSize="10sp"
+                            android:textColor="#888888"
+                            android:letterSpacing="0.06" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnPickTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="16dp"
+                    android:text="⏰   Saat Seç"
+                    android:textSize="14sp"
+                    android:backgroundTint="#EEF4FF"
+                    android:textColor="#3A7BD5"
+                    app:cornerRadius="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaj ve gümrük çıkışı için +45 dakika eklenmektedir"
+                    android:textColor="#AAAAAA"
+                    android:textSize="11sp"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Request button -->
+        <Button
+            android:id="@+id/btnRequestTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Transfer Talep Et"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#3A7BD5"
+            android:textColor="@android:color/white"
+            app:cornerRadius="14dp" />
+
+        <!-- Confirmation card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTransferConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✓  Transferiniz Onaylandı!"
+                    android:textColor="#2E7D32"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#F0F0F0" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="SÜRÜCÜ" android:textColor="#AAAAAA" android:textSize="11sp" android:letterSpacing="0.1" />
+                        <TextView android:id="@+id/tvDriverName" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textColor="#1A1A1A" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="ARAÇ" android:textColor="#AAAAAA" android:textSize="11sp" android:letterSpacing="0.1" />
+                        <TextView android:id="@+id/tvVehicle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textColor="#1A1A1A" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:gravity="center" android:layout_marginTop="16dp"
+                    android:padding="16dp" android:background="@drawable/bg_date_chip_today">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="PLAKA" android:textColor="#3A7BD5" android:textSize="11sp" android:letterSpacing="0.12" />
+                    <TextView android:id="@+id/tvPlate" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#3A7BD5" android:textSize="32sp" android:textStyle="bold"
+                        android:letterSpacing="0.08" android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#F0F0F0" android:layout_marginTop="16dp" android:layout_marginBottom="14dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ALIŞ" android:textColor="#AAAAAA" android:textSize="11sp" android:letterSpacing="0.1" />
+                <TextView android:id="@+id/tvPickupInfo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="#1A1A1A" android:textSize="14sp" android:layout_marginTop="4dp" android:layout_marginBottom="12dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="HEDEF" android:textColor="#AAAAAA" android:textSize="11sp" android:letterSpacing="0.1" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Healify Estetik Merkezi" android:textColor="#1A1A1A"
+                    android:textSize="14sp" android:textStyle="bold" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+
+                <Button android:id="@+id/btnGoToHotel" android:layout_width="match_parent" android:layout_height="52dp"
+                    android:text="Otel Seçimine Geç  →" android:textSize="15sp" android:textStyle="bold"
+                    android:backgroundTint="#3A7BD5" android:textColor="@android:color/white" app:cornerRadius="12dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
