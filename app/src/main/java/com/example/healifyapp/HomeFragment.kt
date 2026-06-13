@@ -3,23 +3,22 @@ package com.example.healifyapp
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         val recyclerView = view.findViewById<RecyclerView>(R.id.homeRecycler)
 
         val list = listOf(
-            CardItem("Saç Ekimi", R.drawable.drawable_hair),
-            CardItem("Rinoplasti", R.drawable.drawable_rinoplasti),
-            CardItem("Liposuction", R.drawable.drawable_liposuction),
-            CardItem("Dudak Dolgusu", R.drawable.drawable_lips),
-            CardItem("Göz Kapağı Estetiği", R.drawable.drawable_eye),
-            CardItem("Yüz Germe", R.drawable.drawable_face)
+            CardItem(R.string.cat_sac_ekimi_name,   "Saç Ekimi",           R.drawable.drawable_hair),
+            CardItem(R.string.cat_rinoplasti_name,  "Rinoplasti",          R.drawable.drawable_rinoplasti),
+            CardItem(R.string.cat_liposuction_name, "Liposuction",         R.drawable.drawable_liposuction),
+            CardItem(R.string.cat_dudak_dolgusu_name,"Dudak Dolgusu",      R.drawable.drawable_lips),
+            CardItem(R.string.cat_goz_kapagi_name,  "Göz Kapağı Estetiği", R.drawable.drawable_eye),
+            CardItem(R.string.cat_yuz_germe_name,   "Yüz Germe",           R.drawable.drawable_face)
         )
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -27,8 +26,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         recyclerView.adapter = CardAdapter(list) { selectedItem ->
             val action = HomeFragmentDirections
-                .actionHomeFragmentToDetailFragment(selectedItem.title)
-
+                .actionHomeFragmentToDetailFragment(selectedItem.categoryKey)
             findNavController().navigate(action)
         }
     }

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Blue Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#3A7BD5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_compare_title"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_compare_subtitle"
+            android:textColor="#B3D4FF"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+    <!-- Hotel Columns -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <!-- Luxury Hotel Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFFDF4"
+            android:padding="12dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healify Suite &amp; Spa"
+                android:textColor="#1A1A1A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textAlignment="viewStart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★★★★★"
+                android:textColor="#FFC107"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€150"
+                    android:textColor="#3A7BD5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel_per_night"
+                    android:textColor="#888888"
+                    android:textSize="11sp"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Features -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_breakfast" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_spa" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_pool" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_shuttle" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_room_service" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_wifi" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_minibar" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 " android:textSize="11sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/hotel_luxury_distance" android:textColor="#3A7BD5" android:textSize="11sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Standard Hotel Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City Inn Istanbul"
+                android:textColor="#1A1A1A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textAlignment="viewStart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★★★"
+                android:textColor="#FFC107"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€75"
+                    android:textColor="#3A7BD5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel_per_night"
+                    android:textColor="#888888"
+                    android:textSize="11sp"
+                    android:layout_marginStart="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Features -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_breakfast" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✗ " android:textColor="#C62828" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_spa" android:textColor="#C62828" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✗ " android:textColor="#C62828" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_pool" android:textColor="#C62828" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✗ " android:textColor="#C62828" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_shuttle" android:textColor="#C62828" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✗ " android:textColor="#C62828" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_room_service" android:textColor="#C62828" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="#2E7D32" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_wifi" android:textColor="#2E7D32" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✗ " android:textColor="#C62828" android:textSize="13sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/compare_minibar" android:textColor="#C62828" android:textSize="13sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 " android:textSize="11sp" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/hotel_standard_distance" android:textColor="#888888" android:textSize="11sp" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/btnCloseCompare"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/compare_close"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="#3A7BD5"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

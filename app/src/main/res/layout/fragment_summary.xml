@@ -23,10 +23,14 @@
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical" android:padding="20dp" android:background="#3A7BD5">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="📋  Rezervasyon Özeti" android:textColor="#B3D4FF" android:textSize="13sp" />
+                    android:text="@string/summary_header_label"
+                    android:textColor="#B3D4FF" android:textSize="13sp"
+                    android:textAlignment="viewStart" />
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="Tüm Detaylar" android:textColor="#FFFFFF"
-                    android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="6dp" />
+                    android:text="@string/summary_all_details"
+                    android:textColor="#FFFFFF" android:textSize="20sp"
+                    android:textStyle="bold" android:layout_marginTop="6dp"
+                    android:textAlignment="viewStart" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -37,10 +41,26 @@
             app:cardCornerRadius="14dp" app:cardElevation="2dp">
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical" android:padding="18dp" android:background="#FFFFFF">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="🏥  İŞLEM VE RANDEVU"
-                    android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
-                    android:letterSpacing="0.06" android:layout_marginBottom="10dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/summary_section_appointment"
+                        android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
+                        android:letterSpacing="0.06" android:textAlignment="viewStart" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUpdateAppointment"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="@string/summary_update_btn"
+                        android:textSize="11sp" android:textColor="#3A7BD5"
+                        app:strokeColor="#3A7BD5" app:strokeWidth="1dp"
+                        app:cornerRadius="8dp"
+                        android:paddingStart="10dp" android:paddingEnd="10dp" />
+                </LinearLayout>
+
                 <include layout="@layout/item_summary_row" android:id="@+id/rowDoctor" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowCategory" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowDate" />
@@ -55,10 +75,26 @@
             app:cardCornerRadius="14dp" app:cardElevation="2dp">
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical" android:padding="18dp" android:background="#FFFFFF">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="🏨  KONAKLAMA"
-                    android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
-                    android:letterSpacing="0.06" android:layout_marginBottom="10dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/summary_section_accommodation"
+                        android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
+                        android:letterSpacing="0.06" android:textAlignment="viewStart" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUpdateHotel"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="@string/summary_update_btn"
+                        android:textSize="11sp" android:textColor="#3A7BD5"
+                        app:strokeColor="#3A7BD5" app:strokeWidth="1dp"
+                        app:cornerRadius="8dp"
+                        android:paddingStart="10dp" android:paddingEnd="10dp" />
+                </LinearLayout>
+
                 <include layout="@layout/item_summary_row" android:id="@+id/rowHotel" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowCheckin" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowCheckout" />
@@ -73,10 +109,26 @@
             app:cardCornerRadius="14dp" app:cardElevation="2dp">
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical" android:padding="18dp" android:background="#FFFFFF">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="🚗  TRANSFER"
-                    android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
-                    android:letterSpacing="0.06" android:layout_marginBottom="10dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/summary_section_transfer"
+                        android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
+                        android:letterSpacing="0.06" android:textAlignment="viewStart" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUpdateTransfer"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="@string/summary_update_btn"
+                        android:textSize="11sp" android:textColor="#3A7BD5"
+                        app:strokeColor="#3A7BD5" app:strokeWidth="1dp"
+                        app:cornerRadius="8dp"
+                        android:paddingStart="10dp" android:paddingEnd="10dp" />
+                </LinearLayout>
+
                 <include layout="@layout/item_summary_row" android:id="@+id/rowDriver" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowVehicle" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowPlate" />
@@ -93,9 +145,10 @@
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical" android:padding="18dp" android:background="#EEF4FF">
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="💳  ÖDEME ÖZETİ"
+                    android:text="@string/summary_section_payment"
                     android:textColor="#3A7BD5" android:textSize="12sp" android:textStyle="bold"
-                    android:letterSpacing="0.06" android:layout_marginBottom="10dp" />
+                    android:letterSpacing="0.06" android:layout_marginBottom="10dp"
+                    android:textAlignment="viewStart" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowHotelCost" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowTransferCost" />
                 <include layout="@layout/item_summary_row" android:id="@+id/rowDeposit" />
@@ -104,31 +157,16 @@
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:gravity="center_vertical">
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
-                        android:layout_weight="1" android:text="TOPLAM" android:textColor="#1A1A1A"
-                        android:textSize="15sp" android:textStyle="bold" />
+                        android:layout_weight="1"
+                        android:text="@string/summary_total"
+                        android:textColor="#1A1A1A" android:textSize="15sp" android:textStyle="bold"
+                        android:textAlignment="viewStart" />
                     <TextView android:id="@+id/tvTotalAmount" android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:textColor="#3A7BD5"
                         android:textSize="22sp" android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <!-- Email button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSendEmail"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="20dp"
-            android:text="📧   Onay Maili Gönder"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="#3A7BD5"
-            app:strokeColor="#3A7BD5"
-            app:strokeWidth="1.5dp"
-            app:cornerRadius="14dp" />
 
         <!-- Payment button -->
         <Button
@@ -138,7 +176,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="10dp"
-            android:text="💳   Ödeme Yap"
+            android:text="@string/summary_pay_btn"
             android:textSize="16sp"
             android:textStyle="bold"
             android:backgroundTint="#3A7BD5"

@@ -1,6 +1,7 @@
 package com.example.healifyapp
 
 object BookingState {
+    var selectedDoctor: DoctorProfileBooking? = null
     var doctorName: String = ""
     var category: String = ""
     var appointmentDateMillis: Long = 0L

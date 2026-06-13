@@ -30,10 +30,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Randevu Seçimi"
+                    android:text="@string/cal_appointment_title"
                     android:textColor="#B3D4FF"
                     android:textSize="13sp"
-                    android:letterSpacing="0.06" />
+                    android:letterSpacing="0.06"
+                    android:textAlignment="viewStart" />
                 <TextView
                     android:id="@+id/tvDoctorName"
                     android:layout_width="wrap_content"
@@ -42,7 +43,8 @@
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="6dp" />
+                    android:layout_marginTop="6dp"
+                    android:textAlignment="viewStart" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -58,11 +60,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tarih Seçin"
+                android:text="@string/cal_select_date"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#1A1A1A"
-                android:layout_marginBottom="14dp" />
+                android:layout_marginBottom="14dp"
+                android:textAlignment="viewStart" />
 
             <!-- Week navigation -->
             <LinearLayout
@@ -79,7 +82,7 @@
                     android:src="@drawable/back_button"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:contentDescription="Önceki hafta" />
+                    android:contentDescription="@string/cal_prev_week" />
 
                 <TextView
                     android:id="@+id/tvMonthYear"
@@ -87,7 +90,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Mayıs 2026"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="#3A7BD5" />
@@ -100,7 +102,7 @@
                     android:rotation="180"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:contentDescription="Sonraki hafta" />
+                    android:contentDescription="@string/cal_next_week" />
 
             </LinearLayout>
 
@@ -134,19 +136,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saat Seçin"
+                android:text="@string/cal_select_time"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#1A1A1A"
-                android:layout_marginBottom="4dp" />
+                android:layout_marginBottom="4dp"
+                android:textAlignment="viewStart" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gri saatler doludur"
+                android:text="@string/cal_times_unavailable"
                 android:textSize="12sp"
                 android:textColor="#AAAAAA"
-                android:layout_marginBottom="4dp" />
+                android:layout_marginBottom="4dp"
+                android:textAlignment="viewStart" />
 
             <!-- Time slots filled programmatically -->
             <LinearLayout
@@ -177,9 +181,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Seçiminiz"
+                    android:text="@string/cal_your_selection"
                     android:textColor="#AAAAAA"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:textAlignment="viewStart" />
                 <TextView
                     android:id="@+id/tvSummaryDate"
                     android:layout_width="wrap_content"
@@ -187,14 +192,16 @@
                     android:textColor="#1A1A1A"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="6dp" />
+                    android:layout_marginTop="6dp"
+                    android:textAlignment="viewStart" />
                 <TextView
                     android:id="@+id/tvSummaryTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#3A7BD5"
                     android:textSize="15sp"
-                    android:layout_marginTop="4dp" />
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="viewStart" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -206,7 +213,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
-            android:text="Randevu Oluştur"
+            android:text="@string/cal_create_appointment"
             android:textSize="16sp"
             android:textStyle="bold"
             android:backgroundTint="#3A7BD5"
@@ -235,11 +242,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Randevunuz Alındı!"
+                android:text="@string/cal_appointment_booked"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="#1A1A1A"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="16dp"
+                android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/tvSuccessDetails"
@@ -249,7 +257,8 @@
                 android:textColor="#666666"
                 android:gravity="center"
                 android:lineSpacingExtra="4dp"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:textAlignment="center" />
 
             <!-- Stay duration info -->
             <androidx.cardview.widget.CardView
@@ -267,10 +276,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🏥  Önerilen Konaklama Süresi"
+                        android:text="@string/cal_recommended_stay"
                         android:textColor="#3A7BD5"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textAlignment="viewStart" />
                     <TextView
                         android:id="@+id/tvStayDuration"
                         android:layout_width="wrap_content"
@@ -278,7 +288,8 @@
                         android:textColor="#1A1A1A"
                         android:textSize="14sp"
                         android:lineSpacingExtra="4dp"
-                        android:layout_marginTop="6dp" />
+                        android:layout_marginTop="6dp"
+                        android:textAlignment="viewStart" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -289,7 +300,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_marginTop="14dp"
-                android:text="✈   Uçuş Planla"
+                android:text="@string/cal_plan_flight"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="#3A7BD5"

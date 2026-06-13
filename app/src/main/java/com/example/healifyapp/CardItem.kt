@@ -1,7 +1,9 @@
-
 package com.example.healifyapp
 
+import androidx.annotation.StringRes
+
 data class CardItem(
-    val title: String,
+    @StringRes val titleResId: Int,
+    val categoryKey: String,
     val imageResId: Int
 )

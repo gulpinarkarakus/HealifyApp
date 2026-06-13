@@ -30,22 +30,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🏨  Konaklama Seçimi"
+                    android:text="@string/hotel_header"
                     android:textColor="#B3D4FF"
-                    android:textSize="13sp" />
+                    android:textSize="13sp"
+                    android:textAlignment="viewStart" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kliniğimize Yakın Oteller"
+                    android:text="@string/hotel_near_clinic"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="6dp" />
+                    android:layout_marginTop="6dp"
+                    android:textAlignment="viewStart" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <!-- LUXURY HOTEL -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardLuxuryHotel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -70,7 +73,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="★  ÖNERİLEN OTEL"
+                        android:text="@string/hotel_recommended"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -99,7 +102,8 @@
                                 android:text="Healify Suite &amp; Spa"
                                 android:textColor="#1A1A1A"
                                 android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:textAlignment="viewStart" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -123,7 +127,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="/ gece"
+                                android:text="@string/hotel_per_night"
                                 android:textColor="#888888"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -144,9 +148,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kliniğe 2 dakika yürüme mesafesi"
+                            android:text="@string/hotel_luxury_distance"
                             android:textColor="#3A7BD5"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:textAlignment="viewStart" />
                     </LinearLayout>
 
                     <View
@@ -159,26 +164,28 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DAHİL HİZMETLER"
+                        android:text="@string/hotel_included_services"
                         android:textColor="#AAAAAA"
                         android:textSize="11sp"
                         android:letterSpacing="0.1"
-                        android:layout_marginBottom="8dp" />
+                        android:layout_marginBottom="8dp"
+                        android:textAlignment="viewStart" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="✓  Kahvaltı dahil\n✓  SPA &amp; Wellness merkezi\n✓  Yüzme havuzu\n✓  Kliniğe özel shuttle servis\n✓  24 saat oda servisi\n✓  Ücretsiz Wi-Fi\n✓  Klima ve minibar"
+                        android:text="@string/hotel_luxury_services"
                         android:textColor="#444444"
                         android:textSize="14sp"
-                        android:lineSpacingExtra="6dp" />
+                        android:lineSpacingExtra="6dp"
+                        android:textAlignment="viewStart" />
 
                     <Button
                         android:id="@+id/btnSelectLuxury"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="16dp"
-                        android:text="Bu Oteli Seç"
+                        android:text="@string/hotel_select_btn"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:backgroundTint="#3A7BD5"
@@ -190,6 +197,7 @@
 
         <!-- STANDARD HOTEL -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardStandardHotel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -220,7 +228,8 @@
                             android:text="City Inn Istanbul"
                             android:textColor="#1A1A1A"
                             android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textAlignment="viewStart" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -244,7 +253,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="/ gece"
+                            android:text="@string/hotel_per_night"
                             android:textColor="#888888"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -265,9 +274,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kliniğe 10 dakika yürüme mesafesi"
+                        android:text="@string/hotel_standard_distance"
                         android:textColor="#888888"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        android:textAlignment="viewStart" />
                 </LinearLayout>
 
                 <View
@@ -280,19 +290,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DAHİL HİZMETLER"
+                    android:text="@string/hotel_included_services"
                     android:textColor="#AAAAAA"
                     android:textSize="11sp"
                     android:letterSpacing="0.1"
-                    android:layout_marginBottom="8dp" />
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="viewStart" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="✓  Kahvaltı dahil\n✓  Ücretsiz Wi-Fi\n✓  24 saat resepsiyon\n✓  Klima"
+                    android:text="@string/hotel_standard_services"
                     android:textColor="#444444"
                     android:textSize="14sp"
-                    android:lineSpacingExtra="6dp" />
+                    android:lineSpacingExtra="6dp"
+                    android:textAlignment="viewStart" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSelectStandard"
@@ -300,7 +312,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16dp"
-                    android:text="Bu Oteli Seç"
+                    android:text="@string/hotel_select_btn"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="#3A7BD5"
@@ -311,7 +323,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Confirmation card (hidden) -->
+        <!-- Confirmation card (hidden until selection) -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardHotelConfirm"
             android:layout_width="match_parent"
@@ -342,11 +354,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rezervasyonunuz Alındı!"
+                    android:text="@string/hotel_reservation_title"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#1A1A1A"
-                    android:layout_marginTop="16dp" />
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/tvConfirmedHotel"
@@ -361,7 +374,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Seçiminiz kaydedildi."
+                    android:text="@string/hotel_selection_saved"
                     android:textSize="13sp"
                     android:textColor="#888888"
                     android:gravity="center"
@@ -370,14 +383,32 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- Compare Hotels button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompareHotels"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/hotel_compare_btn"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#3A7BD5"
+            app:strokeColor="#3A7BD5"
+            app:strokeWidth="1.5dp"
+            app:cornerRadius="14dp" />
+
+        <!-- Go to summary button -->
         <Button
             android:id="@+id/btnGoToSummary"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="14dp"
-            android:text="Rezervasyon Özetine Geç  →"
+            android:layout_marginTop="10dp"
+            android:text="@string/hotel_go_summary_btn"
             android:textSize="15sp"
             android:textStyle="bold"
             android:backgroundTint="#3A7BD5"

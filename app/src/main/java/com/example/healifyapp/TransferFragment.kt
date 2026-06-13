@@ -30,7 +30,7 @@ class TransferFragment : Fragment(R.layout.fragment_transfer) {
         super.onViewCreated(view, savedInstanceState)
 
         val arrivalCal = Calendar.getInstance().apply { timeInMillis = args.arrivalMillis }
-        val displayFmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale("tr"))
+        val displayFmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale.getDefault())
 
         view.findViewById<TextView>(R.id.tvTransferDoctorName).text = args.doctorName
         view.findViewById<TextView>(R.id.tvTransferArrivalDate).text = displayFmt.format(arrivalCal.time)
@@ -87,7 +87,7 @@ class TransferFragment : Fragment(R.layout.fragment_transfer) {
             view.findViewById<TextView>(R.id.tvVehicle).text = vehicle
             view.findViewById<TextView>(R.id.tvPlate).text = plate
             view.findViewById<TextView>(R.id.tvPickupInfo).text =
-                "İstanbul Havalimanı - Dış Hatlar Çıkışı\nTahmini alış saati: $pickupTime"
+                getString(R.string.transfer_pickup_info, pickupTime)
 
             cardConfirm.visibility = View.VISIBLE
             btnRequest.isEnabled = false

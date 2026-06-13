@@ -6,7 +6,7 @@
     app:startDestination="@id/languageFragment">
     <fragment
         android:id="@+id/languageFragment"
-        android:name="LanguageFragment"
+        android:name="com.example.healifyapp.LanguageFragment"
         android:label="LanguageFragment" >
         <action
             android:id="@+id/action_languageFragment_to_loginFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="LoginFragment"
+        android:name="com.example.healifyapp.LoginFragment"
         android:label="LoginFragment" >
         <action
             android:id="@+id/action_loginFragment_to_newUserLoginFragment"
@@ -129,6 +129,21 @@
         <action
             android:id="@+id/action_summaryFragment_to_paymentFragment"
             app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_summaryFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            app:popUpTo="@id/calendarFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_summaryFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment"
+            app:popUpTo="@id/hotelFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_summaryFragment_to_transferFragment"
+            app:destination="@id/transferFragment"
+            app:popUpTo="@id/transferFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment

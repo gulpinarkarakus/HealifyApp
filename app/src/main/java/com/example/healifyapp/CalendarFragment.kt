@@ -112,9 +112,9 @@ class CalendarFragment : Fragment(R.layout.fragment_calendar) {
     private fun setupTimeGrid(view: View) {
         val container = view.findViewById<LinearLayout>(R.id.timeSlotContainer)
         container.removeAllViews()
-        addSectionLabel(container, "Sabah")
+        addSectionLabel(container, getString(R.string.cal_morning))
         addTimeRow(container, morningSlots)
-        addSectionLabel(container, "Öğleden Sonra")
+        addSectionLabel(container, getString(R.string.cal_afternoon))
         addTimeRow(container, afternoonSlots)
     }
 
@@ -183,10 +183,13 @@ class CalendarFragment : Fragment(R.layout.fragment_calendar) {
     private fun updateSummary() {
         if (selectedDate != null) {
             cardSummary.visibility = View.VISIBLE
-            val fmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale("tr"))
+            val fmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale.getDefault())
             tvSummaryDate.setTextColor(0xFF1A1A1A.toInt())
             tvSummaryDate.text = fmt.format(selectedDate!!.time)
-            tvSummaryTime.text = if (selectedTime.isEmpty()) "Saat seçilmedi" else "Saat: $selectedTime"
+            tvSummaryTime.text = if (selectedTime.isEmpty())
+                getString(R.string.cal_time_not_selected)
+            else
+                getString(R.string.cal_time_selected, selectedTime)
         } else {
             cardSummary.visibility = View.GONE
         }
@@ -196,25 +199,26 @@ class CalendarFragment : Fragment(R.layout.fragment_calendar) {
         if (selectedDate == null) {
             cardSummary.visibility = View.VISIBLE
             tvSummaryDate.setTextColor(0xFFE53935.toInt())
-            tvSummaryDate.text = "Lütfen bir tarih seçin"
+            tvSummaryDate.text = getString(R.string.cal_please_select_date)
             tvSummaryTime.text = ""
             return
         }
         if (selectedTime.isEmpty()) {
             cardSummary.visibility = View.VISIBLE
             tvSummaryDate.setTextColor(0xFFE53935.toInt())
-            tvSummaryDate.text = "Lütfen bir saat seçin"
+            tvSummaryDate.text = getString(R.string.cal_please_select_time)
             tvSummaryTime.text = ""
             return
         }
 
-        val fmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale("tr"))
-        tvSuccessDetails.text = "${fmt.format(selectedDate!!.time)}\nSaat $selectedTime"
+        val fmt = SimpleDateFormat("dd MMMM yyyy, EEEE", Locale.getDefault())
+        tvSuccessDetails.text = "${fmt.format(selectedDate!!.time)}\n${getString(R.string.cal_time_selected, selectedTime)}"
 
         val stayDays = procedureStayDays[doctor.category] ?: Pair(5, 7)
-        tvStayDuration.text =
-            "${doctor.category} için randevu tarihinden itibaren ${stayDays.first}-${stayDays.second} gün Türkiye'de kalmanız önerilir."
+        val categoryName = getString(getCategoryNameResId(doctor.category))
+        tvStayDuration.text = getString(R.string.cal_stay_recommendation, categoryName, stayDays.first, stayDays.second)
 
+        BookingState.selectedDoctor = doctor
         BookingState.doctorName = doctor.name
         BookingState.category = doctor.category
         BookingState.appointmentDateMillis = selectedDate!!.timeInMillis
@@ -238,7 +242,7 @@ class CalendarFragment : Fragment(R.layout.fragment_calendar) {
     }
 
     private fun updateMonthYear(cal: Calendar) {
-        val fmt = SimpleDateFormat("MMMM yyyy", Locale("tr"))
+        val fmt = SimpleDateFormat("MMMM yyyy", Locale.getDefault())
         tvMonthYear.text = fmt.format(cal.time).replaceFirstChar { it.uppercase() }
     }
 

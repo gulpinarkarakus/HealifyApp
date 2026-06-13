@@ -4,15 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:layoutDirection="locale">
 
     <TextView
         android:id="@+id/detailTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/staticCard"
@@ -26,18 +29,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layoutDirection="locale">
+
             <TextView
                 android:id="@+id/categorySubtitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textAlignment="viewStart"
+                android:gravity="start" />
+
             <TextView
                 android:id="@+id/categoryDescriptionText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="4dp"
+                android:textAlignment="viewStart"
+                android:gravity="start" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

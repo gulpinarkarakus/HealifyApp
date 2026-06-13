@@ -3,19 +3,231 @@
     <string name="hello_blank_fragment">مرحبًا بالمقطع الفارغ</string>
     <string name="healify">Healify</string>
     <string name="healify2">Healify</string>
-
     <string name="select_language">اختر اللغة</string>
-
     <string name="turkish">التركية</string>
     <string name="english">الإنجليزية</string>
     <string name="deutsch">الألمانية</string>
     <string name="arabic">العربية</string>
-
     <string name="login">تسجيل الدخول</string>
     <string name="password">كلمة المرور</string>
     <string name="email">البريد الإلكتروني</string>
+    <string name="please_select_a_language_to_continue">يرجى اختيار اللغة للمتابعة</string>
+    <string name="sign_in">دخول</string>
+    <string name="new_user_sign_up">تسجيل مستخدم جديد</string>
+    <string name="register">التسجيل</string>
+    <string name="name_surname">الاسم الكامل</string>
+    <string name="welcome_to_healify">مرحبًا بك في Healify</string>
+    <string name="again_password">إعادة كلمة المرور</string>
 
-    <string name="please_select_a_language_to_continue">
-        يرجى اختيار اللغة للمتابعة
-    </string>
+    <!-- تسميات واجهة المستخدم -->
+    <string name="lbl_professional_cv">السيرة الذاتية المهنية</string>
+    <string name="lbl_institutions">المؤسسات</string>
+    <string name="lbl_publications">المنشورات والبحوث</string>
+    <string name="btn_make_appointment">احجز موعد</string>
+    <string name="article_current_approaches">أحدث المناهج في %1$s</string>
+    <string name="article_international_journal">منشورات مجلة الجراحة الدولية</string>
+    <string name="institution_healify_center">مركز Healify الجمالي</string>
+
+    <!-- أسماء الفئات -->
+    <string name="cat_rinoplasti_name">تجميل الأنف</string>
+    <string name="cat_sac_ekimi_name">زراعة الشعر</string>
+    <string name="cat_liposuction_name">شفط الدهون</string>
+    <string name="cat_goz_kapagi_name">تجميل الجفن</string>
+    <string name="cat_yuz_germe_name">شد الوجه</string>
+    <string name="cat_dudak_dolgusu_name">حشو الشفاه</string>
+
+    <!-- تسميات متخصصي الفئات -->
+    <string name="cat_rinoplasti_specialists">متخصصو تجميل الأنف</string>
+    <string name="cat_sac_ekimi_specialists">متخصصو زراعة الشعر</string>
+    <string name="cat_liposuction_specialists">متخصصو شفط الدهون</string>
+    <string name="cat_goz_kapagi_specialists">متخصصو تجميل الجفن</string>
+    <string name="cat_yuz_germe_specialists">متخصصو شد الوجه</string>
+    <string name="cat_dudak_dolgusu_specialists">متخصصو حشو الشفاه</string>
+
+    <!-- تسميات معلومات الفئات -->
+    <string name="cat_rinoplasti_about">حول تجميل الأنف</string>
+    <string name="cat_sac_ekimi_about">حول زراعة الشعر</string>
+    <string name="cat_liposuction_about">حول شفط الدهون</string>
+    <string name="cat_goz_kapagi_about">حول تجميل الجفن</string>
+    <string name="cat_yuz_germe_about">حول شد الوجه</string>
+    <string name="cat_dudak_dolgusu_about">حول حشو الشفاه</string>
+
+    <!-- أوصاف الفئات -->
+    <string name="cat_rinoplasti_desc">يتم تخطيط عمليات تجميل الأنف لدينا بدقة من قِبل جراحين خبراء، لتقديم نتائج طبيعية تتناسق مع ملامح وجهك مع دعم وظيفة التنفس المثلى.</string>
+    <string name="cat_sac_ekimi_desc">باستخدام أحدث تقنيات FUE الياقوتية وDHI، نوفر لعملائنا الذين يعانون من تساقط الشعر ترميمًا دائمًا وكثيفًا وطبيعي المظهر تمامًا.</string>
+    <string name="cat_liposuction_desc">من خلال أساليب شفط الدهون الحديثة الرامية إلى إعادة تشكيل ملامح الجسم، نساعدك على التخلص من الدهون الإقليمية العنيدة وتحقيق قوام أكثر رشاقة.</string>
+    <string name="cat_goz_kapagi_desc">تُزيل عمليات تجفيف الجفون لدينا الترهلات والانتفاخات وعلامات الشيخوخة حول العينين، مما يمنح نظرتك تعبيرًا أكثر انتعاشًا وشبابًا وحيوية.</string>
+    <string name="cat_yuz_germe_desc">تُقلل إجراءات شد الوجه لدينا من آثار الزمن عن طريق تشديد الأنسجة تحت الجلد، وتحديد البيضاوي الوجه، وخلق تأثير تجديد شباب طبيعي.</string>
+    <string name="cat_dudak_dolgusu_desc">في إجراءات حشو الشفاه لدينا المصممة وفق تناسق وجهك، تُستخدم تركيبات حمض الهيالورونيك عالية الجودة للحصول على مظهر طبيعي وجذاب.</string>
+
+    <!-- أقسام الأطباء -->
+    <string name="title_kbb_uzmani">أخصائي أنف وأذن وحنجرة</string>
+    <string name="title_estetik_cerrah">جراح تجميلي</string>
+    <string name="title_dermatolog">طبيب جلدية</string>
+    <string name="title_medikal_estetik">طب تجميلي</string>
+    <string name="title_sac_cerrahi">جراح الشعر</string>
+    <string name="title_plastik_cerrah">جراح تجميل</string>
+    <string name="title_goz_cerrahi">جراح العيون</string>
+
+    <!-- سيرة الأطباء – تجميل الأنف -->
+    <string name="cv_ahmet_yilmaz">خبرة تزيد عن 25 عامًا في جراحة الأنف مع التركيز على رأب الأنف بالبيزو وجماليات الأنف العرقية. أجرى أكثر من 3000 عملية رأب أنف بمستوى استثنائي من رضا المرضى.</string>
+    <string name="cv_selin_erdem">متخصصة معترف بها دوليًا في رأب الأنف التصحيحي والتقنيات الجراحية بالبيزو. تحمل شهادات متقدمة من مراكز رأب الأنف في أوروبا والولايات المتحدة.</string>
+    <string name="cv_kerem_soylu">15 عامًا من الخبرة في جراحة الأنف الوظيفية والجمالية. خبير في تصحيح تشوهات الأنف مع تحسين وظيفة التنفس في آنٍ واحد.</string>
+    <string name="cv_ece_kilic">متخصصة في قسط الأنف والتصحيح الجمالي للأنف. تدربت في أبرز عيادات الجراحة التجميلية. تشتهر بنتائج دقيقة وطبيعية المظهر.</string>
+    <string name="cv_berk_ates">متمكن من تقنيات رأب الأنف المفتوحة والمغلقة بأكثر من 12 عامًا من الممارسة السريرية. يركز على الجماليات الأنفية المخصصة للمريض مع التأكيد على التناسق.</string>
+    <string name="cv_gizem_aksoy">خبيرة في رأب الأنف الثانوي والتصحيحي مع سجل يضم أكثر من 500 مراجعة معقدة. تدربت في فرنسا وألمانيا وتجلب معايير الجراحة الدولية لكل إجراء.</string>
+
+    <!-- سيرة الأطباء – زراعة الشعر -->
+    <string name="cv_hakan_kaya">رائد في تقنيات زراعة الشعر بـFUE بأكثر من 10 سنوات من ممارسة الأمراض الجلدية المتخصصة. خبير في تحليل جذور الشعر والتخطيط الشخصي للزرع.</string>
+    <string name="cv_leyla_aydin">مبتكرة في منهجية زراعة الشعر بـDHI الياقوتي. دربت جراحين دوليين في تقنيات DHI المتقدمة عبر أوروبا والشرق الأوسط بنتائج استثنائية للمرضى.</string>
+    <string name="cv_murat_demir">متخصص في تصميم خط الشعر الطبيعي للرجال والنساء. يجمع النهج الفني مع الدقة الجراحية لتحقيق نتائج طبيعية المظهر تمامًا.</string>
+    <string name="cv_serkan_yurt">خبير في الميكرو FUE والعلاج الموضعي للشعر. أجرى أكثر من 2500 عملية زراعة شعر ناجحة مع ندوب دنيا وأعلى معدلات بقاء للبصيلات.</string>
+    <string name="cv_nihan_polat">متخصصة في علاج تساقط الشعر عند المرأة والعلاج بـPRP. تشتهر بالرعاية الرحيمة ومعدلات النجاح المرتفعة في حالات الصلع الأنثوي بنهج علاجي شخصي.</string>
+    <string name="cv_emre_koc">رائد في تقنية زراعة الشعر الآلية في تركيا. يجمع الدقة الآلية مع الفن الإنساني لتحقيق نتائج زرع متفوقة ورضا مرتفع باستمرار للمرضى.</string>
+
+    <!-- سيرة الأطباء – شفط الدهون -->
+    <string name="cv_ayse_akin">خبيرة في شفط دهون VASER وتشكيل الجسم الكامل. معتمدة من مجالس الجراحة التجميلية الدولية في تقنيات نحت الجسم المتقدمة بأكثر من 2000 إجراء.</string>
+    <string name="cv_canan_batur">معتمدة دوليًا في تقنيات شفط دهون الليزر. تتمتع بأكثر من 20 عامًا من الخبرة في إجراءات تشكيل الجسم في تركيا وأوروبا بنتائج رائعة.</string>
+    <string name="cv_firat_celik">متخصص في إزالة الدهون الإقليمية الموجهة مقترنة بإجراءات شد الجلد. تدرب في أبرز برامج الجراحة التجميلية في ألمانيا والمملكة المتحدة.</string>
+    <string name="cv_tuba_yildiz">خبيرة في شفط الدهون عالي الدقة وعمليات شد البطن المجمعة. تحقق ملامح رياضية تبدو طبيعية مع تقليل أوقات التعافي.</string>
+    <string name="cv_bora_sahin">يطور خطط علاجية شاملة لشفط دهون الجسم الكامل. يستخدم أحدث تقنيات الموجات فوق الصوتية والليزر لتعافٍ سريع ونتائج تشكيل الجسم المتميزة.</string>
+    <string name="cv_asli_cetin">متخصصة في إجراءات نقل الدهون بما فيها رفع الأرداف البرازيلي وحقن دهون الوجه. أكثر من 15 عامًا من الخبرة في تقنيات تشكيل الجسم المتقدمة.</string>
+
+    <!-- سيرة الأطباء – تجميل الجفن -->
+    <string name="cv_zeynep_aras">جراحة عيون تجميلية متخصصة في تصحيح تدلي الجفن وجراحة إعادة بناء الجفن. تدربت في معهد جونز هوبكنز للعيون. تُجري أكثر من 300 إجراء سنويًا.</string>
+    <string name="cv_metehan_oz">20 عامًا من خبرة رأب الجفن مع أكثر من 4000 عملية جراحة جفن. يشتهر بنتائج طبيعية المظهر وندوب دنيا وبروتوكولات تعافٍ سريعة.</string>
+    <string name="cv_seda_gunes">خبيرة في تجديد شباب المنطقة المحيطة بالعين بما فيها رفع الحواجب وتصحيح الجفون وإعادة تسطيح الليزر. نهج شامل لاستعادة انسجام شبابي للمنطقة العينية.</string>
+    <string name="cv_alper_kurt">رائد في رأب الجفن بالليزر وتصحيح التدلي. يجمع المهارات الجراحية التقليدية مع أحدث تقنيات الليزر لنتائج متفوقة وطويلة الأمد.</string>
+    <string name="cv_yasemin_dogan">متخصصة في تجديد شباب العين غير الجراحي بما فيه حشو أسفل العين والبوتوكس والعلاج بـPRP. أكثر من 8 سنوات من ممارسة الطب التجميلي.</string>
+    <string name="cv_cenk_arslan">خبير في تجديد شباب المنطقة المحيطة بالعين بشكل شامل من خلال تقنيات جراحية وغير جراحية. تدرب في معاهد الجراحة التجميلية الأوروبية المرموقة.</string>
+
+    <!-- سيرة الأطباء – شد الوجه -->
+    <string name="cv_nilufer_yalin">متخصصة عالميًا معروفة في جراحة شد الوجه العميقة بلا ندوب. طورت تقنيات مبتكرة تُقلل وقت التعافي مع تعظيم نتائج تجديد شباب الوجه.</string>
+    <string name="cv_baris_vural">خبير في تحديد البيضاوي الوجه وعمليات الشد الشاملة. أجرى أكثر من 1500 عملية شد وجه بمستوى استثنائي من رضا المرضى ونتائج طبيعية المظهر.</string>
+    <string name="cv_deniz_tan">متخصص في تجديد شباب الوجه التدخلي البسيط باستخدام رفع الخيوط والترددات الراديوية وتقنيات HIFU. أكثر من 12 عامًا من الممارسة الجمالية.</string>
+    <string name="cv_melis_celik">متخصصة في إجراءات S-Lift وشد الوجه الصغير. تحقق نتائج درامية لكن طبيعية مع تقليل ملحوظ في أوقات التعافي.</string>
+    <string name="cv_ozan_kara">خبير في تقنيات شد الوجه العميق SMAS بـ25 عامًا من الخبرة الجراحية. يُدرّب الجراحين الأصغر سنًا في مناهج شد الوجه المتقدمة بنشاط.</string>
+    <string name="cv_eda_arslan">رائدة في تقنيات تجديد شباب الوجه بالمنظار. تجمع الفن التقليدي مع التكنولوجيا الحديثة لنتائج متفوقة ومعدلات رضا مرتفعة باستمرار.</string>
+
+    <!-- سيرة الأطباء – حشو الشفاه -->
+    <string name="cv_burcu_sen">متخصصة في إجراءات تحجيم الشفاه باستخدام مبادئ النسبة الذهبية. خبيرة في حشوات حمض الهيالورونيك وتقنيات تكبير الشفاه الدقيقة لنتائج متوازنة وطبيعية.</string>
+    <string name="cv_caner_ege">جراح-فنان متخصص في تصميم الشفاه الطبيعي باستخدام منتجات حمض الهيالورونيك المتميزة. يشتهر بنتائج متوازنة تمامًا وطبيعية المظهر تُبرز ملامح كل مريض.</string>
+    <string name="cv_irem_gur">طبيبة جلدية متخصصة في تحديد محيط الشفاه وعلاجات الحشو الجمالية. أكثر من 10 سنوات من الخبرة في تقنيات الحقن المتقدمة بنتائج متميزة باستمرار.</string>
+    <string name="cv_sena_yildirim">متخصصة في تقنية الشفاه الروسية لتعزيز بروز الشفاه. تستخدم منهجية الحقن الدقيقة لتكبير شفاه متناسق وطبيعي المظهر مُكيَّف حسب انسجام الوجه.</string>
+    <string name="cv_tarik_aydin">خبير في تحسين توازن الوجه من خلال وضع حشو الشفاه الاستراتيجي. طبيب جلدية مع تدريب مكثف في تقنيات الحقن الجمالية وتحليل نسب الوجه.</string>
+    <string name="cv_pinar_karahan">متخصصة في إجراءات محيط الشفاه الدائمة وتصميم الشفاه على شكل M. تجمع الخبرة الطبية مع الرؤية الفنية للحصول على جمالية شفاه مثالية ونتائج جميلة طويلة الأمد.</string>
+
+    <!-- شاشة التقويم -->
+    <string name="cal_appointment_title">اختيار الموعد</string>
+    <string name="cal_select_date">اختر التاريخ</string>
+    <string name="cal_select_time">اختر الوقت</string>
+    <string name="cal_times_unavailable">الأوقات الرمادية محجوزة</string>
+    <string name="cal_your_selection">اختيارك</string>
+    <string name="cal_create_appointment">إنشاء موعد</string>
+    <string name="cal_appointment_booked">تم حجز موعدك!</string>
+    <string name="cal_recommended_stay">🏥  مدة الإقامة الموصى بها</string>
+    <string name="cal_plan_flight">✈   خطط للرحلة</string>
+    <string name="cal_prev_week">الأسبوع السابق</string>
+    <string name="cal_next_week">الأسبوع التالي</string>
+    <string name="cal_morning">الصباح</string>
+    <string name="cal_afternoon">بعد الظهر</string>
+    <string name="cal_time_not_selected">لم يتم اختيار وقت</string>
+    <string name="cal_time_selected">الوقت: %1$s</string>
+    <string name="cal_please_select_date">يرجى اختيار تاريخ</string>
+    <string name="cal_please_select_time">يرجى اختيار وقت</string>
+    <string name="cal_stay_recommendation">بالنسبة لـ %1$s، يُوصى بالبقاء في تركيا %2$d–%3$d أيام بعد تاريخ الموعد.</string>
+
+    <!-- شاشة الرحلة -->
+    <string name="flight_title">✈  تخطيط الرحلة</string>
+    <string name="flight_procedure_label">الإجراء</string>
+    <string name="flight_suggested_dates">التواريخ المقترحة</string>
+    <string name="flight_arrival">✈ الوصول</string>
+    <string name="flight_return">✈ العودة</string>
+    <string name="flight_istanbul">إسطنبول (IST)</string>
+    <string name="flight_departure_title">اختر نقطة المغادرة</string>
+    <string name="flight_search_note">سيتم البحث عبر المطار الرئيسي</string>
+    <string name="flight_search_btn">البحث عن رحلات</string>
+    <string name="flight_kayak_note">سيتم فتح البحث عبر Kayak.com.tr</string>
+    <string name="flight_transfer_hotel_btn">🚗  خطط للنقل والفندق</string>
+    <string name="flight_stay_info">لهذا الإجراء، يُوصى بالبقاء في تركيا\n%1$d–%2$d أيام بعد تاريخ الموعد.</string>
+
+    <!-- شاشة النقل -->
+    <string name="transfer_header">🚗  نقل المستشفى</string>
+    <string name="transfer_free_service">يمكنك الاستفادة من خدمة النقل الخاصة والمريحة والمجانية من المطار إلى عيادتنا.</string>
+    <string name="transfer_pickup_date">تاريخ الاستقبال</string>
+    <string name="transfer_airport_route">مطار إسطنبول ← مركز Healify الجمالي</string>
+    <string name="transfer_landing_time">وقت هبوطك</string>
+    <string name="transfer_touch_to_select">المس للاختيار</string>
+    <string name="transfer_hour">الساعة</string>
+    <string name="transfer_min">دقيقة</string>
+    <string name="transfer_pick_time_btn">⏰   اختر الوقت</string>
+    <string name="transfer_baggage_note">يُضاف +45 دقيقة للأمتعة وإجراءات الجمارك</string>
+    <string name="transfer_request_btn">طلب النقل</string>
+    <string name="transfer_confirmed">✓  تم تأكيد نقلك!</string>
+    <string name="transfer_driver">السائق</string>
+    <string name="transfer_vehicle">السيارة</string>
+    <string name="transfer_plate">لوحة الترخيص</string>
+    <string name="transfer_pickup_label">الاستقبال</string>
+    <string name="transfer_destination">الوجهة</string>
+    <string name="transfer_to_hotel_btn">المتابعة لاختيار الفندق ←</string>
+    <string name="transfer_destination_name">مركز Healify الجمالي</string>
+    <string name="transfer_pickup_info">مطار إسطنبول – صالة الوصول الدولي\nوقت الاستقبال المقدر: %1$s</string>
+
+    <!-- شاشة الفندق -->
+    <string name="hotel_header">🏨  اختيار الإقامة</string>
+    <string name="hotel_near_clinic">فنادق قريبة من عيادتنا</string>
+    <string name="hotel_recommended">★  الفندق الموصى به</string>
+    <string name="hotel_per_night">/ ليلة</string>
+    <string name="hotel_luxury_distance">مسافة 2 دقيقة مشياً للعيادة</string>
+    <string name="hotel_standard_distance">مسافة 10 دقائق مشياً للعيادة</string>
+    <string name="hotel_included_services">الخدمات المشمولة</string>
+    <string name="hotel_luxury_services">✓  إفطار مشمول\n✓  مركز SPA والعافية\n✓  حمام سباحة\n✓  خدمة توصيل إلى العيادة\n✓  خدمة الغرف 24 ساعة\n✓  واي فاي مجاني\n✓  تكييف ومينيبار</string>
+    <string name="hotel_standard_services">✓  إفطار مشمول\n✓  واي فاي مجاني\n✓  استقبال 24 ساعة\n✓  تكييف</string>
+    <string name="hotel_select_btn">اختر هذا الفندق</string>
+    <string name="hotel_selected_btn">✓ تم الاختيار</string>
+    <string name="hotel_reservation_title">تم تأكيد الحجز!</string>
+    <string name="hotel_selection_saved">تم حفظ اختيارك.</string>
+    <string name="hotel_go_summary_btn">الذهاب إلى ملخص الحجز ←</string>
+    <string name="hotel_compare_btn">مقارنة الفنادق</string>
+    <string name="hotel_compare_title">مقارنة الفنادق</string>
+    <string name="hotel_compare_subtitle">مقارنة الأسعار والمرافق والمسافة</string>
+    <string name="compare_breakfast">إفطار</string>
+    <string name="compare_spa">SPA والعافية</string>
+    <string name="compare_pool">حمام السباحة</string>
+    <string name="compare_shuttle">توصيل للعيادة</string>
+    <string name="compare_room_service">خدمة الغرف</string>
+    <string name="compare_wifi">واي فاي</string>
+    <string name="compare_minibar">مينيبار</string>
+    <string name="compare_close">إغلاق</string>
+
+    <!-- ملخص الحجز -->
+    <string name="summary_header_label">📋  ملخص الحجز</string>
+    <string name="summary_all_details">جميع التفاصيل</string>
+    <string name="summary_section_appointment">🏥  الإجراء والموعد</string>
+    <string name="summary_section_accommodation">🏨  الإقامة</string>
+    <string name="summary_section_transfer">🚗  النقل</string>
+    <string name="summary_section_payment">💳  ملخص الدفع</string>
+    <string name="summary_lbl_doctor">الطبيب</string>
+    <string name="summary_lbl_procedure">الإجراء</string>
+    <string name="summary_lbl_date">التاريخ</string>
+    <string name="summary_lbl_time">الوقت</string>
+    <string name="summary_lbl_hotel">الفندق</string>
+    <string name="summary_lbl_checkin">تسجيل الوصول</string>
+    <string name="summary_lbl_checkout">تسجيل المغادرة</string>
+    <string name="summary_lbl_stay">المدة</string>
+    <string name="summary_stay_nights">%1$d ليالٍ</string>
+    <string name="summary_lbl_driver">السائق</string>
+    <string name="summary_lbl_vehicle">المركبة</string>
+    <string name="summary_lbl_plate">لوحة الترقيم</string>
+    <string name="summary_lbl_landing">وقت الهبوط</string>
+    <string name="summary_lbl_pickup">وقت الاستقبال</string>
+    <string name="summary_lbl_hotel_cost">الإقامة</string>
+    <string name="summary_hotel_cost_format">€%1$d × %2$d ليالٍ = €%3$d</string>
+    <string name="summary_lbl_transfer_cost">النقل</string>
+    <string name="summary_transfer_free">مجاني</string>
+    <string name="summary_lbl_deposit">إيداع الإجراء</string>
+    <string name="summary_total">المجموع</string>
+    <string name="summary_pay_btn">💳   انتقل إلى الدفع</string>
+    <string name="summary_update_btn">✏  تحديث</string>
+    <string name="hotel_compare_content">┌─────────────────────────────────┐\n│      HEALIFY SUITE &amp; SPA        │\n│   ★★★★★  •  €150/ليلة           │\n│   2 دقيقة مشياً للعيادة         │\n├─────────────────────────────────┤\n│  إفطار              ✓           │\n│  SPA والعافية       ✓           │\n│  حمام السباحة       ✓           │\n│  توصيل للعيادة      ✓           │\n│  خدمة الغرف         ✓           │\n│  واي فاي مجاني      ✓           │\n│  مينيبار             ✓           │\n├─────────────────────────────────┤\n│       CITY INN ISTANBUL         │\n│   ★★★  •  €75/ليلة              │\n│   10 دقائق مشياً للعيادة        │\n├─────────────────────────────────┤\n│  إفطار              ✓           │\n│  SPA والعافية       ✗           │\n│  حمام السباحة       ✗           │\n│  توصيل للعيادة      ✗           │\n│  خدمة الغرف         ✗           │\n│  واي فاي مجاني      ✓           │\n│  مينيبار             ✗           │\n└─────────────────────────────────┘</string>
 </resources>

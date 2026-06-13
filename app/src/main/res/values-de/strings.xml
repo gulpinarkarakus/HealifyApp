@@ -11,13 +11,223 @@
     <string name="login">Anmelden</string>
     <string name="password">Passwort</string>
     <string name="email">E-Mail</string>
-    <string name="please_select_a_language_to_continue">
-        Bitte wählen Sie eine Sprache aus, um fortzufahren
-    </string>
+    <string name="please_select_a_language_to_continue">Bitte wählen Sie eine Sprache aus, um fortzufahren</string>
     <string name="sign_in">Einloggen</string>
     <string name="new_user_sign_up">Neuen Benutzer registrieren</string>
     <string name="register">Registrieren</string>
     <string name="name_surname">Vor- und Nachname</string>
     <string name="welcome_to_healify">Willkommen bei Healify</string>
     <string name="again_password">Passwort erneut eingeben</string>
+
+    <!-- UI-Bezeichnungen -->
+    <string name="lbl_professional_cv">BERUFLICHER WERDEGANG</string>
+    <string name="lbl_institutions">TÄTIGKEITSSTÄTTEN</string>
+    <string name="lbl_publications">VERÖFFENTLICHUNGEN &amp; FORSCHUNG</string>
+    <string name="btn_make_appointment">TERMIN BUCHEN</string>
+    <string name="article_current_approaches">Aktuelle Ansätze in der %1$s</string>
+    <string name="article_international_journal">Internationale Chirurgiezeitschrift Publikationen</string>
+    <string name="institution_healify_center">Healify Ästhetikzentrum</string>
+
+    <!-- Kategorienamen -->
+    <string name="cat_rinoplasti_name">Rhinoplastik</string>
+    <string name="cat_sac_ekimi_name">Haartransplantation</string>
+    <string name="cat_liposuction_name">Liposuktion</string>
+    <string name="cat_goz_kapagi_name">Lidchirurgie</string>
+    <string name="cat_yuz_germe_name">Facelift</string>
+    <string name="cat_dudak_dolgusu_name">Lippenaufspritzung</string>
+
+    <!-- Kategorie-Spezialisten-Bezeichnungen -->
+    <string name="cat_rinoplasti_specialists">Rhinoplastik-Spezialisten</string>
+    <string name="cat_sac_ekimi_specialists">Haartransplantations-Spezialisten</string>
+    <string name="cat_liposuction_specialists">Liposuktions-Spezialisten</string>
+    <string name="cat_goz_kapagi_specialists">Lidchirurgie-Spezialisten</string>
+    <string name="cat_yuz_germe_specialists">Facelift-Spezialisten</string>
+    <string name="cat_dudak_dolgusu_specialists">Lippenaufspritzungs-Spezialisten</string>
+
+    <!-- Kategorie-Info-Bezeichnungen -->
+    <string name="cat_rinoplasti_about">Über Rhinoplastik</string>
+    <string name="cat_sac_ekimi_about">Über Haartransplantation</string>
+    <string name="cat_liposuction_about">Über Liposuktion</string>
+    <string name="cat_goz_kapagi_about">Über Lidchirurgie</string>
+    <string name="cat_yuz_germe_about">Über Facelift</string>
+    <string name="cat_dudak_dolgusu_about">Über Lippenaufspritzung</string>
+
+    <!-- Kategoriebeschreibungen -->
+    <string name="cat_rinoplasti_desc">Unsere Rhinoplastik-Eingriffe werden von erfahrenen Chirurgen sorgfältig geplant und liefern natürliche Ergebnisse, die zu Ihren Gesichtszügen passen und die Atemfunktion unterstützen.</string>
+    <string name="cat_sac_ekimi_desc">Mit den neuesten Saphir-FUE- und DHI-Techniken bieten wir unseren Patienten eine dauerhafte, dichte und vollkommen natürlich aussehende Haarrestaurierung.</string>
+    <string name="cat_liposuction_desc">Mit modernen Liposuktionsmethoden zur Neugestaltung der Körperkonturen helfen wir Ihnen, hartnäckige Fettansammlungen zu beseitigen und eine schlankere Silhouette zu erreichen.</string>
+    <string name="cat_goz_kapagi_desc">Unsere Blepharoplastik-Eingriffe beseitigen Erschlaffungen, Schwellungen und Alterszeichen um die Augen und verleihen Ihrem Blick einen frischen, jugendlichen Ausdruck.</string>
+    <string name="cat_yuz_germe_desc">Unsere Facelift-Eingriffe minimieren die Auswirkungen der Zeit, straffen das Unterhautgewebe, definieren das Gesichtsoval und schaffen einen natürlichen Verjüngungseffekt.</string>
+    <string name="cat_dudak_dolgusu_desc">Bei unseren auf Ihre Gesichtssymmetrie abgestimmten Lippenbehandlungen werden hochwertige Hyaluronsäureformulierungen für ein natürliches und attraktives Erscheinungsbild verwendet.</string>
+
+    <!-- Arztbezeichnungen -->
+    <string name="title_kbb_uzmani">HNO-Facharzt</string>
+    <string name="title_estetik_cerrah">Ästhetischer Chirurg</string>
+    <string name="title_dermatolog">Dermatologe</string>
+    <string name="title_medikal_estetik">Medizinische Ästhetik</string>
+    <string name="title_sac_cerrahi">Haarchirurg</string>
+    <string name="title_plastik_cerrah">Plastischer Chirurg</string>
+    <string name="title_goz_cerrahi">Augenchirurg</string>
+
+    <!-- Ärztliche Lebensläufe – Rhinoplastik -->
+    <string name="cv_ahmet_yilmaz">Über 25 Jahre Expertise in der Nasenchirurgie mit Schwerpunkt auf Piezo-Rhinoplastik und ethnischer Nasenchirurgie. Über 3.000 Rhinoplastik-Eingriffe mit außergewöhnlicher Patientenzufriedenheit.</string>
+    <string name="cv_selin_erdem">International anerkannte Spezialistin für Revisions-Rhinoplastik und piezo-chirurgische Techniken. Besitzt Fortbildungszertifikate von Rhinoplastik-Zentren in Europa und den USA.</string>
+    <string name="cv_kerem_soylu">15 Jahre Erfahrung in funktionaler und ästhetischer Nasenchirurgie. Experte für die Korrektur von Nasendeformitäten bei gleichzeitiger Verbesserung der Atemfunktion.</string>
+    <string name="cv_ece_kilic">Spezialistin für Septoplastik und ästhetische Nasenkorrektur. Ausgebildet an führenden plastisch-chirurgischen Kliniken. Bekannt für präzise, natürlich aussehende Nasenumformung.</string>
+    <string name="cv_berk_ates">Meister offener und geschlossener Rhinoplastik-Techniken mit über 12 Jahren klinischer Praxis. Konzentriert sich auf patientenindividuelle Nasenästhetik mit starker Betonung der Symmetrie.</string>
+    <string name="cv_gizem_aksoy">Expertin für Sekundär- und Revisions-Rhinoplastik mit über 500 komplexen Revisionen. In Frankreich und Deutschland ausgebildet; bringt internationale Chirurgiestandards in jeden Eingriff.</string>
+
+    <!-- Ärztliche Lebensläufe – Haartransplantation -->
+    <string name="cv_hakan_kaya">Pionier der FUE-Haartransplantationstechniken mit über 10 Jahren spezialisierter Dermatologiepraxis. Experte für Haarwurzelanalyse und personalisierte Transplantationsplanung.</string>
+    <string name="cv_leyla_aydin">Innovatorin der Saphir-DHI-Haartransplantationsmethodik. Hat internationale Chirurgen in fortgeschrittenen DHI-Techniken in Europa und dem Nahen Osten geschult.</string>
+    <string name="cv_murat_demir">Spezialist für natürliches Haarliniendesign für Männer und Frauen. Verbindet künstlerischen Ansatz mit chirurgischer Präzision für nahtlose, natürliche Ergebnisse.</string>
+    <string name="cv_serkan_yurt">Experte für Mikro-FUE und Haarmesotherapie. Über 2.500 erfolgreiche Haartransplantationen mit minimaler Narbenbildung und maximalen Überlebensraten der Grafts.</string>
+    <string name="cv_nihan_polat">Spezialistin für weiblichen Haarausfall und PRP-Therapie. Bekannt für einfühlsame Betreuung und hohe Erfolgsraten bei weiblichem Haarausfall mit personalisiertem Behandlungsansatz.</string>
+    <string name="cv_emre_koc">Pionier der robotischen Haartransplantationstechnologie. Kombiniert robotische Präzision mit menschlicher Kunstfertigkeit für überlegene Grafting-Ergebnisse.</string>
+
+    <!-- Ärztliche Lebensläufe – Liposuktion -->
+    <string name="cv_ayse_akin">Expertin für VASER-Liposuktion und Gesamtkörperkonturierung. Von internationalen plastisch-chirurgischen Gremien in fortgeschrittenen Körperformungstechniken zertifiziert.</string>
+    <string name="cv_canan_batur">International zertifiziert in Laser-Liposuktions-Techniken. Über 20 Jahre Erfahrung bei Körperformungseingriffen in der Türkei und Europa mit bemerkenswerten Ergebnissen.</string>
+    <string name="cv_firat_celik">Spezialist für gezielte regionale Fettentfernung kombiniert mit Hautstraffungsverfahren. An führenden plastisch-chirurgischen Programmen in Deutschland und Großbritannien ausgebildet.</string>
+    <string name="cv_tuba_yildiz">Expertin für hochauflösende Liposuktion und kombinierte Abdominoplastik. Liefert natürlich aussehende sportliche Konturen mit minimierten Erholungszeiten.</string>
+    <string name="cv_bora_sahin">Entwickelt umfassende Ganzkörper-Liposuktionsbehandlungspläne. Verwendet die neuesten Ultraschall- und lasergestützten Technologien für minimale Erholungszeiten.</string>
+    <string name="cv_asli_cetin">Spezialistin für Fetttransfer-Verfahren einschließlich Brazilian Butt Lift und Gesichtsfettgrafting. Über 15 Jahre Erfahrung in der Körperkonturierung.</string>
+
+    <!-- Ärztliche Lebensläufe – Lidchirurgie -->
+    <string name="cv_zeynep_aras">Okuloplastische Chirurgin mit Expertise in Lidptose-Korrektur und rekonstruktiver Lidchirurgie. Am Johns-Hopkins-Augeninstitut ausgebildet. Führt jährlich über 300 Eingriffe durch.</string>
+    <string name="cv_metehan_oz">20 Jahre Blepharoplastik-Erfahrung mit über 4.000 Lidoperationen. Bekannt für natürlich aussehende Ergebnisse, minimale Narbenbildung und schnelle Genesungsprotokolle.</string>
+    <string name="cv_seda_gunes">Expertin für perokuläre Verjüngung einschließlich Brauenlifting, Lidkorrekturen und Laserbehandlung. Ganzheitlicher Ansatz zur Wiederherstellung jugendlicher Harmonie.</string>
+    <string name="cv_alper_kurt">Pionier der lasergestützten Blepharoplastik und Ptose-Korrektur. Verbindet traditionelle chirurgische Fähigkeiten mit modernster Lasertechnologie für überlegene Ergebnisse.</string>
+    <string name="cv_yasemin_dogan">Spezialistin für nicht-chirurgische Augenverjüngung einschließlich Unterlid-Filler, Botox und PRP-Therapie. Über 8 Jahre ästhetische Medizinpraxis.</string>
+    <string name="cv_cenk_arslan">Experte für umfassende perokuläre Verjüngung durch chirurgische und nicht-chirurgische Techniken. An renommierten europäischen plastisch-chirurgischen Instituten ausgebildet.</string>
+
+    <!-- Ärztliche Lebensläufe – Facelift -->
+    <string name="cv_nilufer_yalin">Weltweit anerkannte Spezialistin für narbenfreie Tief-Ebenen-Facelift-Chirurgie. Entwickelte innovative Techniken, die die Genesungszeit minimieren und die Gesichtsverjüngung maximieren.</string>
+    <string name="cv_baris_vural">Experte für Gesichtsoval-Definition und umfassende Liftoperationen. Hat über 1.500 Facelift-Operationen mit hervorragender Patientenzufriedenheit durchgeführt.</string>
+    <string name="cv_deniz_tan">Minimalinvasiver Gesichtsverjüngungsspezialist mit Fadenlifting, Radiofrequenz- und HIFU-Technologien. Über 12 Jahre ästhetische Praxis mit Fokus auf subtile, natürliche Verbesserungen.</string>
+    <string name="cv_melis_celik">Spezialistin für S-Lift- und Mini-Facelift-Verfahren. Erzielt dramatische, aber natürliche Ergebnisse mit deutlich reduzierten Erholungszeiten.</string>
+    <string name="cv_ozan_kara">Experte für tiefe SMAS-Facelift-Techniken mit 25 Jahren chirurgischer Erfahrung. Unterrichtet aktiv jüngere Chirurgen in fortgeschrittenen Facelift-Methoden.</string>
+    <string name="cv_eda_arslan">Pionierin endoskopischer Gesichtsverjüngungstechniken. Verbindet traditionelle Kunstfertigkeit mit moderner Technologie für überragende Ergebnisse.</string>
+
+    <!-- Ärztliche Lebensläufe – Lippenaufspritzung -->
+    <string name="cv_burcu_sen">Spezialistin für Lippenvolumisierung nach dem Goldenen-Schnitt-Prinzip. Expertin für Hyaluronsäure-Filler und Lippenaugmentation für perfekt ausgewogene, natürliche Ergebnisse.</string>
+    <string name="cv_caner_ege">Künstler-Chirurg spezialisiert auf natürliches Lippendesign mit Premium-Hyaluronsäure-Produkten. Bekannt für perfekt ausgewogene, natürlich aussehende Ergebnisse.</string>
+    <string name="cv_irem_gur">Dermatologin spezialisiert auf Lippenkonturdefinition und ästhetische Filler-Behandlungen. Über 10 Jahre Erfahrung in fortgeschrittenen Injektionstechniken.</string>
+    <string name="cv_sena_yildirim">Spezialistin der Russian-Lip-Technik für verbesserte Lippenprojektion. Verwendet Präzisions-Injektionsmethodik für raffinierte, natürlich aussehende Lippenaugmentation.</string>
+    <string name="cv_tarik_aydin">Experte für Gesichtsbalance-Optimierung durch strategische Lippenfiller-Platzierung. Dermatologe mit umfangreicher Ausbildung in ästhetischen Injektionstechniken.</string>
+    <string name="cv_pinar_karahan">Spezialistin für dauerhafte Lippenkontursverfahren und M-förmiges Lippendesign. Kombiniert medizinische Expertise mit künstlerischer Vision für ideale Lippenästhetik.</string>
+
+    <!-- Kalender-Bildschirm -->
+    <string name="cal_appointment_title">Terminauswahl</string>
+    <string name="cal_select_date">Datum wählen</string>
+    <string name="cal_select_time">Uhrzeit wählen</string>
+    <string name="cal_times_unavailable">Graue Zeiten sind belegt</string>
+    <string name="cal_your_selection">Ihre Auswahl</string>
+    <string name="cal_create_appointment">Termin erstellen</string>
+    <string name="cal_appointment_booked">Termin gebucht!</string>
+    <string name="cal_recommended_stay">🏥  Empfohlene Aufenthaltsdauer</string>
+    <string name="cal_plan_flight">✈   Flug planen</string>
+    <string name="cal_prev_week">Vorherige Woche</string>
+    <string name="cal_next_week">Nächste Woche</string>
+    <string name="cal_morning">Morgen</string>
+    <string name="cal_afternoon">Nachmittag</string>
+    <string name="cal_time_not_selected">Uhrzeit nicht gewählt</string>
+    <string name="cal_time_selected">Zeit: %1$s</string>
+    <string name="cal_please_select_date">Bitte wählen Sie ein Datum</string>
+    <string name="cal_please_select_time">Bitte wählen Sie eine Uhrzeit</string>
+    <string name="cal_stay_recommendation">Für %1$s wird empfohlen, nach dem Termin %2$d–%3$d Tage in der Türkei zu bleiben.</string>
+
+    <!-- Flug-Bildschirm -->
+    <string name="flight_title">✈  Flugplanung</string>
+    <string name="flight_procedure_label">BEHANDLUNG</string>
+    <string name="flight_suggested_dates">EMPFOHLENE DATEN</string>
+    <string name="flight_arrival">✈ ANKUNFT</string>
+    <string name="flight_return">✈ RÜCKFLUG</string>
+    <string name="flight_istanbul">Istanbul (IST)</string>
+    <string name="flight_departure_title">Abflugort wählen</string>
+    <string name="flight_search_note">Die Suche erfolgt über den Hauptflughafen</string>
+    <string name="flight_search_btn">Flüge suchen</string>
+    <string name="flight_kayak_note">Die Suche wird über Kayak.com.tr geöffnet</string>
+    <string name="flight_transfer_hotel_btn">🚗  Transfer &amp; Hotel planen</string>
+    <string name="flight_stay_info">Für diese Behandlung wird empfohlen, nach dem Termin\n%1$d–%2$d Tage in der Türkei zu bleiben.</string>
+
+    <!-- Transfer-Bildschirm -->
+    <string name="transfer_header">🚗  Krankenhaustransfer</string>
+    <string name="transfer_free_service">Sie können unseren privaten, komfortablen und kostenlosen Transferservice vom Flughafen zu unserer Klinik nutzen.</string>
+    <string name="transfer_pickup_date">ABHOLDATUM</string>
+    <string name="transfer_airport_route">Flughafen Istanbul → Healify Ästhetikzentrum</string>
+    <string name="transfer_landing_time">IHRE LANDEZEIT</string>
+    <string name="transfer_touch_to_select">Zum Auswählen tippen</string>
+    <string name="transfer_hour">STD</string>
+    <string name="transfer_min">MIN.</string>
+    <string name="transfer_pick_time_btn">⏰   Uhrzeit wählen</string>
+    <string name="transfer_baggage_note">+45 Minuten für Gepäck und Zollaustritt werden hinzugefügt</string>
+    <string name="transfer_request_btn">Transfer anfordern</string>
+    <string name="transfer_confirmed">✓  Ihr Transfer ist bestätigt!</string>
+    <string name="transfer_driver">FAHRER</string>
+    <string name="transfer_vehicle">FAHRZEUG</string>
+    <string name="transfer_plate">KENNZEICHEN</string>
+    <string name="transfer_pickup_label">ABHOLUNG</string>
+    <string name="transfer_destination">ZIEL</string>
+    <string name="transfer_to_hotel_btn">Zur Hotelauswahl  →</string>
+    <string name="transfer_destination_name">Healify Ästhetikzentrum</string>
+    <string name="transfer_pickup_info">Flughafen Istanbul – Internationales Ankunftsterminal\nGeschätzte Abholzeit: %1$s</string>
+
+    <!-- Hotel-Bildschirm -->
+    <string name="hotel_header">🏨  Unterkunftsauswahl</string>
+    <string name="hotel_near_clinic">Hotels in Kliniknähe</string>
+    <string name="hotel_recommended">★  EMPFOHLENES HOTEL</string>
+    <string name="hotel_per_night">/ Nacht</string>
+    <string name="hotel_luxury_distance">2 Minuten Fußweg zur Klinik</string>
+    <string name="hotel_standard_distance">10 Minuten Fußweg zur Klinik</string>
+    <string name="hotel_included_services">INBEGRIFFENE LEISTUNGEN</string>
+    <string name="hotel_luxury_services">✓  Frühstück inklusive\n✓  SPA &amp; Wellness-Zentrum\n✓  Schwimmbad\n✓  Klinik-Shuttle-Service\n✓  24-Stunden-Zimmerservice\n✓  Kostenloses WLAN\n✓  Klimaanlage und Minibar</string>
+    <string name="hotel_standard_services">✓  Frühstück inklusive\n✓  Kostenloses WLAN\n✓  24-Stunden-Rezeption\n✓  Klimaanlage</string>
+    <string name="hotel_select_btn">Dieses Hotel wählen</string>
+    <string name="hotel_selected_btn">✓ Ausgewählt</string>
+    <string name="hotel_reservation_title">Reservierung bestätigt!</string>
+    <string name="hotel_selection_saved">Ihre Auswahl wurde gespeichert.</string>
+    <string name="hotel_go_summary_btn">Zur Reservierungsübersicht  →</string>
+    <string name="hotel_compare_btn">Hotels vergleichen</string>
+    <string name="hotel_compare_title">Hotelvergleich</string>
+    <string name="hotel_compare_subtitle">Preis-, Leistungs- und Entfernungsvergleich</string>
+    <string name="compare_breakfast">Frühstück</string>
+    <string name="compare_spa">SPA &amp; Wellness</string>
+    <string name="compare_pool">Schwimmbad</string>
+    <string name="compare_shuttle">Klinik-Shuttle</string>
+    <string name="compare_room_service">Zimmerservice</string>
+    <string name="compare_wifi">WLAN</string>
+    <string name="compare_minibar">Minibar</string>
+    <string name="compare_close">Schließen</string>
+
+    <!-- Zusammenfassung -->
+    <string name="summary_header_label">📋  Buchungsübersicht</string>
+    <string name="summary_all_details">Alle Details</string>
+    <string name="summary_section_appointment">🏥  EINGRIFF &amp; TERMIN</string>
+    <string name="summary_section_accommodation">🏨  UNTERKUNFT</string>
+    <string name="summary_section_transfer">🚗  TRANSFER</string>
+    <string name="summary_section_payment">💳  ZAHLUNGSÜBERSICHT</string>
+    <string name="summary_lbl_doctor">Arzt</string>
+    <string name="summary_lbl_procedure">Eingriff</string>
+    <string name="summary_lbl_date">Datum</string>
+    <string name="summary_lbl_time">Uhrzeit</string>
+    <string name="summary_lbl_hotel">Hotel</string>
+    <string name="summary_lbl_checkin">Check-in</string>
+    <string name="summary_lbl_checkout">Check-out</string>
+    <string name="summary_lbl_stay">Aufenthalt</string>
+    <string name="summary_stay_nights">%1$d Nächte</string>
+    <string name="summary_lbl_driver">Fahrer</string>
+    <string name="summary_lbl_vehicle">Fahrzeug</string>
+    <string name="summary_lbl_plate">Kennzeichen</string>
+    <string name="summary_lbl_landing">Ankunftszeit</string>
+    <string name="summary_lbl_pickup">Abholzeit</string>
+    <string name="summary_lbl_hotel_cost">Unterkunft</string>
+    <string name="summary_hotel_cost_format">€%1$d × %2$d Nächte = €%3$d</string>
+    <string name="summary_lbl_transfer_cost">Transfer</string>
+    <string name="summary_transfer_free">Kostenlos</string>
+    <string name="summary_lbl_deposit">Verfahrenskaution</string>
+    <string name="summary_total">GESAMT</string>
+    <string name="summary_pay_btn">💳   Zur Zahlung</string>
+    <string name="summary_update_btn">✏  Aktualisieren</string>
+    <string name="hotel_compare_content">┌─────────────────────────────────┐\n│      HEALIFY SUITE &amp; SPA        │\n│   ★★★★★  •  €150/Nacht          │\n│   2 Min. Fußweg zur Klinik      │\n├─────────────────────────────────┤\n│  Frühstück         ✓            │\n│  SPA &amp; Wellness    ✓            │\n│  Schwimmbad        ✓            │\n│  Klinik-Shuttle    ✓            │\n│  Zimmerservice     ✓            │\n│  Kostenloses WLAN  ✓            │\n│  Minibar           ✓            │\n├─────────────────────────────────┤\n│       CITY INN ISTANBUL         │\n│   ★★★  •  €75/Nacht             │\n│   10 Min. Fußweg zur Klinik     │\n├─────────────────────────────────┤\n│  Frühstück         ✓            │\n│  SPA &amp; Wellness    ✗            │\n│  Schwimmbad        ✗            │\n│  Klinik-Shuttle    ✗            │\n│  Zimmerservice     ✗            │\n│  Kostenloses WLAN  ✓            │\n│  Minibar           ✗            │\n└─────────────────────────────────┘</string>
 </resources>

@@ -11,14 +11,223 @@
     <string name="login">Giriş Yap</string>
     <string name="password">Şifre</string>
     <string name="email">E-posta</string>
-    <string name="please_select_a_language_to_continue">
-        Devam etmek için lütfen bir dil seçiniz
-    </string>
+    <string name="please_select_a_language_to_continue">Devam etmek için lütfen bir dil seçiniz</string>
     <string name="sign_in">Oturum Aç</string>
     <string name="new_user_sign_up">Yeni kullanıcı kaydı</string>
     <string name="register">Kayıt Ol</string>
     <string name="name_surname">Ad Soyad</string>
     <string name="again_password">Şifreyi Tekrar Giriniz</string>
-    <string name="welcome_to_healify">Healifya Hoş Geldin</string>
+    <string name="welcome_to_healify">Healify\'e Hoş Geldiniz</string>
 
+    <!-- UI Etiketleri -->
+    <string name="lbl_professional_cv">PROFESYONEL ÖZGEÇMİŞ</string>
+    <string name="lbl_institutions">ÇALIŞTIĞI KURUMLAR</string>
+    <string name="lbl_publications">YAYINLAR VE ARAŞTIRMALAR</string>
+    <string name="btn_make_appointment">RANDEVU AL</string>
+    <string name="article_current_approaches">%1$s Alanında Güncel Yaklaşımlar</string>
+    <string name="article_international_journal">Uluslararası Cerrahi Dergisi Yayınları</string>
+    <string name="institution_healify_center">Healify Estetik Merkezi</string>
+
+    <!-- Kategori Adları -->
+    <string name="cat_rinoplasti_name">Rinoplasti</string>
+    <string name="cat_sac_ekimi_name">Saç Ekimi</string>
+    <string name="cat_liposuction_name">Liposuction</string>
+    <string name="cat_goz_kapagi_name">Göz Kapağı Estetiği</string>
+    <string name="cat_yuz_germe_name">Yüz Germe</string>
+    <string name="cat_dudak_dolgusu_name">Dudak Dolgusu</string>
+
+    <!-- Kategori Uzman Etiketleri -->
+    <string name="cat_rinoplasti_specialists">Rinoplasti Uzmanları</string>
+    <string name="cat_sac_ekimi_specialists">Saç Ekimi Uzmanları</string>
+    <string name="cat_liposuction_specialists">Liposuction Uzmanları</string>
+    <string name="cat_goz_kapagi_specialists">Göz Kapağı Estetiği Uzmanları</string>
+    <string name="cat_yuz_germe_specialists">Yüz Germe Uzmanları</string>
+    <string name="cat_dudak_dolgusu_specialists">Dudak Dolgusu Uzmanları</string>
+
+    <!-- Kategori Hakkında Etiketleri -->
+    <string name="cat_rinoplasti_about">Rinoplasti Hakkında</string>
+    <string name="cat_sac_ekimi_about">Saç Ekimi Hakkında</string>
+    <string name="cat_liposuction_about">Liposuction Hakkında</string>
+    <string name="cat_goz_kapagi_about">Göz Kapağı Estetiği Hakkında</string>
+    <string name="cat_yuz_germe_about">Yüz Germe Hakkında</string>
+    <string name="cat_dudak_dolgusu_about">Dudak Dolgusu Hakkında</string>
+
+    <!-- Kategori Açıklamaları -->
+    <string name="cat_rinoplasti_desc">Yüz hatlarınızla uyumlu, doğal ve fonksiyonel nefes alışverişini destekleyen burun estetiği operasyonlarımız, alanında uzman cerrahlarımız tarafından titizlikle planlanmaktadır.</string>
+    <string name="cat_sac_ekimi_desc">En son teknoloji Safir FUE ve DHI tekniklerini kullanarak, dökülme problemi yaşayan danışanlarımıza ömür boyu kalıcı, yoğun ve tamamen doğal görünümlü saç restorasyonu sağlıyoruz.</string>
+    <string name="cat_liposuction_desc">Vücut hatlarını yeniden şekillendirmek amacıyla uygulanan modern liposuction yöntemleriyle, inatçı bölgesel yağlanmalardan kurtulmanızı ve daha fit bir silüete sahip olmanızı hedefliyoruz.</string>
+    <string name="cat_goz_kapagi_desc">Blefaroplasti operasyonlarımız ile göz çevresindeki sarkma, torbalanma ve yaşlılık belirtilerini ortadan kaldırarak, bakışlarınıza çok daha dinç, genç ve enerjik bir ifade kazandırıyoruz.</string>
+    <string name="cat_yuz_germe_desc">Zamanın etkilerini minimize eden yüz germe prosedürlerimiz, cildin alt dokularını sıkılaştırarak yüz ovalini netleştirir ve sarkmaları gidererek doğal bir gençleşme etkisi yaratır.</string>
+    <string name="cat_dudak_dolgusu_desc">Yüz simetrinize uygun hacim ve belirginlik kazandıran dudak dolgusu uygulamalarımızda, yüksek kaliteli hyaluronik asit içerikleriyle doğal ve çekici bir görünüm elde edilmektedir.</string>
+
+    <!-- Doktor Unvanları -->
+    <string name="title_kbb_uzmani">KBB Uzmanı</string>
+    <string name="title_estetik_cerrah">Estetik Cerrah</string>
+    <string name="title_dermatolog">Dermatolog</string>
+    <string name="title_medikal_estetik">Medikal Estetik</string>
+    <string name="title_sac_cerrahi">Saç Cerrahı</string>
+    <string name="title_plastik_cerrah">Plastik Cerrah</string>
+    <string name="title_goz_cerrahi">Göz Cerrahı</string>
+
+    <!-- Doktor Özgeçmişleri – Rinoplasti -->
+    <string name="cv_ahmet_yilmaz">Piezo rinoplasti ve etnik burun estetiği alanında 25 yılı aşkın uzmanlığa sahiptir. 3.000\'den fazla rinoplasti operasyonu gerçekleştirerek olağanüstü hasta memnuniyeti elde etmiştir.</string>
+    <string name="cv_selin_erdem">Revizyon rinoplasti ve piezo cerrahi tekniklerinde uluslararası düzeyde tanınan bir uzman. Avrupa ve ABD\'deki rinoplasti merkezlerinden ileri sertifikalara sahiptir.</string>
+    <string name="cv_kerem_soylu">Hem fonksiyonel hem de estetik burun cerrahisinde 15 yıllık deneyime sahiptir. Solunum fonksiyonunu iyileştirirken burun deformitelerinin düzeltilmesinde uzmandır.</string>
+    <string name="cv_ece_kilic">Septoplasti ve estetik burun düzeltme alanında uzman. İstanbul ve Ankara\'daki önde gelen plastik cerrahi kliniklerinde yetişmiştir. Hassas ve doğal görünümlü sonuçlarıyla tanınmaktadır.</string>
+    <string name="cv_berk_ates">12 yılı aşkın klinik pratiğiyle açık ve kapalı rinoplasti tekniklerinde ustalaşmıştır. Simetriye güçlü bir vurgu yaparak hastaya özel burun estetiği üzerine yoğunlaşmaktadır.</string>
+    <string name="cv_gizem_aksoy">500\'den fazla karmaşık revizyon deneyimiyle ikincil ve revizyon rinoplastisinde uzman. Fransa ve Almanya\'da eğitim almış; her operasyona uluslararası cerrahi standartları getirmektedir.</string>
+
+    <!-- Doktor Özgeçmişleri – Saç Ekimi -->
+    <string name="cv_hakan_kaya">10 yılı aşkın özelleşmiş dermatoloji pratiğiyle FUE saç ekimi tekniklerinin öncüsü. Saç kökü analizi ve kişiselleştirilmiş ekimi planlamada uzmandır.</string>
+    <string name="cv_leyla_aydin">Safir DHI saç ekimi metodolojisinin yenilikçisi. Avrupa ve Orta Doğu\'da uluslararası cerrahlara ileri DHI tekniklerini öğretmiş; üstün hasta sonuçlarıyla tanınmaktadır.</string>
+    <string name="cv_murat_demir">Erkek ve kadınlar için doğal saç çizgisi tasarımında uzman. Doğal görünümlü sonuçlar için cerrahi hassasiyetle sanatsal yaklaşımı birleştirmektedir.</string>
+    <string name="cv_serkan_yurt">Mikro FUE ve saç mezoterapisinde uzman. Minimal iz bırakarak ve maksimum greft yaşama oranıyla 2.500\'den fazla başarılı saç ekimi operasyonu gerçekleştirmiştir.</string>
+    <string name="cv_nihan_polat">Kadın saç dökülmesi tedavisi ve PRP terapisinde uzman. Kişiselleştirilmiş tedavi yaklaşımıyla kadın tipi kellik vakalarında şefkatli bakımı ve yüksek başarı oranıyla tanınmaktadır.</string>
+    <string name="cv_emre_koc">Türkiye\'de robotik saç ekimi teknolojisinin öncüsü. Üstün greft sonuçları ve sürekli yüksek hasta memnuniyeti için robotik hassasiyeti insan sanatıyla birleştirmektedir.</string>
+
+    <!-- Doktor Özgeçmişleri – Liposuction -->
+    <string name="cv_ayse_akin">VASER liposuction ve total vücut şekillendirme uzmanı. Uluslararası plastik cerrahi kurulları tarafından ileri vücut heykeltıraşlığı tekniklerinde sertifikalandırılmış; 2.000\'den fazla operasyon gerçekleştirmiştir.</string>
+    <string name="cv_canan_batur">Lazer liposuction tekniklerinde uluslararası sertifikaya sahip. Türkiye ve Avrupa genelinde 20 yılı aşkın vücut şekillendirme operasyonu deneyimiyle dikkat çekici sonuçlar elde etmektedir.</string>
+    <string name="cv_firat_celik">Deri sıkılaştırma prosedürleriyle birlikte bölgesel yağ almanın uzmanı. Almanya ve İngiltere\'deki üst düzey plastik cerrahi programlarında eğitim almıştır.</string>
+    <string name="cv_tuba_yildiz">Yüksek tanımlı liposuction ve kombine abdominoplasti prosedürleri uzmanı. Minimize edilmiş iyileşme süreleriyle hastaları için doğal görünümlü atletik hatlar elde etmektedir.</string>
+    <string name="cv_bora_sahin">Kapsamlı tam vücut liposuction tedavi planları geliştirir. Minimum iyileşme süreleri ve üstün vücut şekillendirme sonuçları için en son ultrasonik ve lazer destekli teknolojileri kullanmaktadır.</string>
+    <string name="cv_asli_cetin">Brezilya kalça estetiği ve yüz yağ transferi dahil yağ transferi prosedürlerinde uzman. İleri vücut şekillendirme ve yağ yeniden dağıtım tekniklerinde 15 yılı aşkın deneyime sahiptir.</string>
+
+    <!-- Doktor Özgeçmişleri – Göz Kapağı Estetiği -->
+    <string name="cv_zeynep_aras">Göz kapağı düşüklüğü düzeltme ve rekonstrüktif göz kapağı cerrahisinde uzman oküloplastik cerrah. Johns Hopkins Göz Enstitüsü\'nde eğitim almıştır. Yılda 300\'den fazla operasyon gerçekleştirmektedir.</string>
+    <string name="cv_metehan_oz">4.000\'den fazla göz kapağı ameliyatı gerçekleştirmiş, 20 yıllık blefaroplasti deneyimine sahip. Doğal görünümlü sonuçları, minimal izleri ve hızlı iyileşme protokolleriyle tanınmaktadır.</string>
+    <string name="cv_seda_gunes">Kaş kaldırma, göz kapağı düzeltme ve lazer yüzey yenileme dahil göz çevresi gençleştirme uzmanı. Tüm göz bölgesine gençlik uyumu kazandırmak için bütüncül bir yaklaşım kullanmaktadır.</string>
+    <string name="cv_alper_kurt">Lazer destekli blefaroplasti ve ptoz düzeltmenin öncüsü. Geleneksel cerrahi becerileri son teknoloji lazer teknolojisiyle birleştirerek üstün ve uzun süreli sonuçlar elde etmektedir.</string>
+    <string name="cv_yasemin_dogan">Göz altı dolgusu, Botoks ve PRP terapisi dahil cerrahi olmayan göz gençleştirme uzmanı. 8 yılı aşkın estetik tıp pratiğiyle binlerce memnun hasta elde etmiştir.</string>
+    <string name="cv_cenk_arslan">Cerrahi ve cerrahi olmayan teknikleri birleştirerek kapsamlı göz çevresi gençleştirme uzmanı. Ünlü Avrupa plastik cerrahi enstitülerinde hasta odaklı bir yaklaşımla eğitim almıştır.</string>
+
+    <!-- Doktor Özgeçmişleri – Yüz Germe -->
+    <string name="cv_nilufer_yalin">İz bırakmayan derin düzlem yüz germe cerrahisinde dünya çapında tanınan uzman. Yüz gençleştirmeyi maksimize ederken iyileşme süresini minimize eden yenilikçi teknikler geliştirmiştir.</string>
+    <string name="cv_baris_vural">Yüz ovalini belirginleştirme ve kapsamlı germe operasyonlarında uzman. Doğal görünümlü sonuçlarla 1.500\'den fazla yüz germe operasyonu gerçekleştirmiş; mükemmel hasta memnuniyeti elde etmiştir.</string>
+    <string name="cv_deniz_tan">İplik asma, radyofrekans ve HIFU teknolojilerini kullanan minimal invaziv yüz gençleştirme uzmanı. 12 yılı aşkın estetik pratiğiyle doğal ve ince iyileştirmelere odaklanmaktadır.</string>
+    <string name="cv_melis_celik">S-lift ve mini yüz germe prosedürleri uzmanı. Önemli ölçüde kısaltılmış iyileşme süreleriyle çarpıcı ama doğal bir gençlik görünümü elde etmektedir.</string>
+    <string name="cv_ozan_kara">25 yıllık cerrahi deneyimiyle derin SMAS yüz germe tekniklerinde uzman. Uluslararası çalıştaylarda daha genç cerrahlara ileri yüz germe metodolojilerini aktif olarak öğretmektedir.</string>
+    <string name="cv_eda_arslan">Türkiye\'de endoskopik yüz gençleştirme tekniklerinin öncüsü. Üstün sonuçlar ve sürekli yüksek hasta memnuniyeti oranları için geleneksel sanatı modern teknolojiyle birleştirmektedir.</string>
+
+    <!-- Doktor Özgeçmişleri – Dudak Dolgusu -->
+    <string name="cv_burcu_sen">Altın oran ilkelerini kullanarak dudak hacimlendirme prosedürleri uzmanı. Mükemmel dengeli ve doğal sonuçlar için hyaluronik asit dolgu ve hassas dudak büyütme tekniklerinde uzman.</string>
+    <string name="cv_caner_ege">Premium hyaluronik asit ürünlerini kullanarak doğal dudak tasarımında uzmanlaşmış sanatçı-cerrah. Her hastanın kendine özgü özelliklerini ön plana çıkaran mükemmel dengeli ve doğal görünümlü sonuçlarıyla tanınmaktadır.</string>
+    <string name="cv_irem_gur">Dudak kontür tanımlaması ve estetik dolgu tedavilerinde uzman dermatolog. İleri enjeksiyon tekniklerinde sürekli üstün sonuçlarla 10 yılı aşkın deneyime sahiptir.</string>
+    <string name="cv_sena_yildirim">Gelişmiş dudak projeksiyon için Rus Dudak tekniğinde uzman. Yüz uyumuna göre kalibre edilmiş rafine ve doğal görünümlü dudak büyütme için hassas enjeksiyon metodolojisi kullanmaktadır.</string>
+    <string name="cv_tarik_aydin">Stratejik dudak dolgusu yerleştirme yoluyla yüz dengesi optimizasyonu uzmanı. Estetik enjeksiyon teknikleri ve yüz oran analizi konusunda kapsamlı eğitim almış dermatolog.</string>
+    <string name="cv_pinar_karahan">Kalıcı dudak kontürü prosedürleri ve M-şekli dudak tasarımında uzman. Uzun süreli güzel sonuçlar için tıbbi uzmanlığı sanatsal vizyon ile birleştirmektedir.</string>
+
+    <!-- Takvim Ekranı -->
+    <string name="cal_appointment_title">Randevu Seçimi</string>
+    <string name="cal_select_date">Tarih Seçin</string>
+    <string name="cal_select_time">Saat Seçin</string>
+    <string name="cal_times_unavailable">Gri saatler doludur</string>
+    <string name="cal_your_selection">Seçiminiz</string>
+    <string name="cal_create_appointment">Randevu Oluştur</string>
+    <string name="cal_appointment_booked">Randevunuz Alındı!</string>
+    <string name="cal_recommended_stay">🏥  Önerilen Konaklama Süresi</string>
+    <string name="cal_plan_flight">✈   Uçuş Planla</string>
+    <string name="cal_prev_week">Önceki hafta</string>
+    <string name="cal_next_week">Sonraki hafta</string>
+    <string name="cal_morning">Sabah</string>
+    <string name="cal_afternoon">Öğleden Sonra</string>
+    <string name="cal_time_not_selected">Saat seçilmedi</string>
+    <string name="cal_time_selected">Saat: %1$s</string>
+    <string name="cal_please_select_date">Lütfen bir tarih seçin</string>
+    <string name="cal_please_select_time">Lütfen bir saat seçin</string>
+    <string name="cal_stay_recommendation">%1$s için randevu tarihinden itibaren %2$d–%3$d gün Türkiye\'de kalmanız önerilir.</string>
+
+    <!-- Uçuş Ekranı -->
+    <string name="flight_title">✈  Uçuş Planlama</string>
+    <string name="flight_procedure_label">İŞLEM</string>
+    <string name="flight_suggested_dates">ÖNERİLEN TARİHLER</string>
+    <string name="flight_arrival">✈ GELİŞ</string>
+    <string name="flight_return">✈ DÖNÜŞ</string>
+    <string name="flight_istanbul">İstanbul (IST)</string>
+    <string name="flight_departure_title">Kalkış Noktanızı Seçin</string>
+    <string name="flight_search_note">Ana havalimanı üzerinden arama yapılacaktır</string>
+    <string name="flight_search_btn">Uçuş Ara</string>
+    <string name="flight_kayak_note">Kayak.com.tr üzerinden arama açılacaktır</string>
+    <string name="flight_transfer_hotel_btn">🚗  Transfer &amp; Otel Planla</string>
+    <string name="flight_stay_info">Bu işlem için randevu tarihinden itibaren\n%1$d–%2$d gün Türkiye\'de kalmanız önerilir.</string>
+
+    <!-- Transfer Ekranı -->
+    <string name="transfer_header">🚗  Hastane Transferi</string>
+    <string name="transfer_free_service">Havalimanından kliniğimize özel, konforlu ve ücretsiz transfer hizmetimizden yararlanabilirsiniz.</string>
+    <string name="transfer_pickup_date">ALIŞ TARİHİ</string>
+    <string name="transfer_airport_route">İstanbul Havalimanı → Healify Estetik Merkezi</string>
+    <string name="transfer_landing_time">İNİŞ SAATİNİZ</string>
+    <string name="transfer_touch_to_select">Dokunarak seçin</string>
+    <string name="transfer_hour">SAAT</string>
+    <string name="transfer_min">DAK.</string>
+    <string name="transfer_pick_time_btn">⏰   Saat Seç</string>
+    <string name="transfer_baggage_note">Bagaj ve gümrük çıkışı için +45 dakika eklenmektedir</string>
+    <string name="transfer_request_btn">Transfer Talep Et</string>
+    <string name="transfer_confirmed">✓  Transferiniz Onaylandı!</string>
+    <string name="transfer_driver">SÜRÜCÜ</string>
+    <string name="transfer_vehicle">ARAÇ</string>
+    <string name="transfer_plate">PLAKA</string>
+    <string name="transfer_pickup_label">ALIŞ</string>
+    <string name="transfer_destination">HEDEF</string>
+    <string name="transfer_to_hotel_btn">Otel Seçimine Geç  →</string>
+    <string name="transfer_destination_name">Healify Estetik Merkezi</string>
+    <string name="transfer_pickup_info">İstanbul Havalimanı – Dış Hatlar Çıkışı\nTahmini alış saati: %1$s</string>
+
+    <!-- Otel Ekranı -->
+    <string name="hotel_header">🏨  Konaklama Seçimi</string>
+    <string name="hotel_near_clinic">Kliniğimize Yakın Oteller</string>
+    <string name="hotel_recommended">★  ÖNERİLEN OTEL</string>
+    <string name="hotel_per_night">/ gece</string>
+    <string name="hotel_luxury_distance">Kliniğe 2 dakika yürüme mesafesi</string>
+    <string name="hotel_standard_distance">Kliniğe 10 dakika yürüme mesafesi</string>
+    <string name="hotel_included_services">DAHİL HİZMETLER</string>
+    <string name="hotel_luxury_services">✓  Kahvaltı dahil\n✓  SPA &amp; Wellness merkezi\n✓  Yüzme havuzu\n✓  Kliniğe özel shuttle servis\n✓  24 saat oda servisi\n✓  Ücretsiz Wi-Fi\n✓  Klima ve minibar</string>
+    <string name="hotel_standard_services">✓  Kahvaltı dahil\n✓  Ücretsiz Wi-Fi\n✓  24 saat resepsiyon\n✓  Klima</string>
+    <string name="hotel_select_btn">Bu Oteli Seç</string>
+    <string name="hotel_selected_btn">✓ Seçildi</string>
+    <string name="hotel_reservation_title">Rezervasyonunuz Alındı!</string>
+    <string name="hotel_selection_saved">Seçiminiz kaydedildi.</string>
+    <string name="hotel_go_summary_btn">Rezervasyon Özetine Geç  →</string>
+    <string name="hotel_compare_btn">Otelleri Karşılaştır</string>
+    <string name="hotel_compare_title">Otel Karşılaştırması</string>
+    <string name="hotel_compare_subtitle">Fiyat, imkan ve mesafe karşılaştırması</string>
+    <string name="compare_breakfast">Kahvaltı</string>
+    <string name="compare_spa">SPA &amp; Wellness</string>
+    <string name="compare_pool">Yüzme Havuzu</string>
+    <string name="compare_shuttle">Klinik Shuttle</string>
+    <string name="compare_room_service">Oda Servisi</string>
+    <string name="compare_wifi">Wi-Fi</string>
+    <string name="compare_minibar">Minibar</string>
+    <string name="compare_close">Kapat</string>
+
+    <!-- Özet Sayfası -->
+    <string name="summary_header_label">📋  Rezervasyon Özeti</string>
+    <string name="summary_all_details">Tüm Detaylar</string>
+    <string name="summary_section_appointment">🏥  İŞLEM VE RANDEVU</string>
+    <string name="summary_section_accommodation">🏨  KONAKLAMA</string>
+    <string name="summary_section_transfer">🚗  TRANSFER</string>
+    <string name="summary_section_payment">💳  ÖDEME ÖZETİ</string>
+    <string name="summary_lbl_doctor">Doktor</string>
+    <string name="summary_lbl_procedure">İşlem</string>
+    <string name="summary_lbl_date">Tarih</string>
+    <string name="summary_lbl_time">Saat</string>
+    <string name="summary_lbl_hotel">Otel</string>
+    <string name="summary_lbl_checkin">Giriş</string>
+    <string name="summary_lbl_checkout">Çıkış</string>
+    <string name="summary_lbl_stay">Süre</string>
+    <string name="summary_stay_nights">%1$d gece</string>
+    <string name="summary_lbl_driver">Sürücü</string>
+    <string name="summary_lbl_vehicle">Araç</string>
+    <string name="summary_lbl_plate">Plaka</string>
+    <string name="summary_lbl_landing">İniş saati</string>
+    <string name="summary_lbl_pickup">Alış saati</string>
+    <string name="summary_lbl_hotel_cost">Konaklama</string>
+    <string name="summary_hotel_cost_format">€%1$d × %2$d gece = €%3$d</string>
+    <string name="summary_lbl_transfer_cost">Transfer</string>
+    <string name="summary_transfer_free">Ücretsiz</string>
+    <string name="summary_lbl_deposit">İşlem depozitosu</string>
+    <string name="summary_total">TOPLAM</string>
+    <string name="summary_pay_btn">💳   Ödeme Yap</string>
+    <string name="summary_update_btn">✏  Güncelle</string>
+    <string name="hotel_compare_content">┌─────────────────────────────────┐\n│      HEALIFY SUITE &amp; SPA        │\n│   ★★★★★  •  €150/gece           │\n│   Kliniğe 2 dk yürüme          │\n├─────────────────────────────────┤\n│  Kahvaltı          ✓            │\n│  SPA &amp; Wellness    ✓            │\n│  Yüzme Havuzu      ✓            │\n│  Klinik Shuttle    ✓            │\n│  Oda Servisi       ✓            │\n│  Ücretsiz Wi-Fi    ✓            │\n│  Minibar           ✓            │\n├─────────────────────────────────┤\n│       CITY INN ISTANBUL         │\n│   ★★★  •  €75/gece              │\n│   Kliniğe 10 dk yürüme         │\n├─────────────────────────────────┤\n│  Kahvaltı          ✓            │\n│  SPA &amp; Wellness    ✗            │\n│  Yüzme Havuzu      ✗            │\n│  Klinik Shuttle    ✗            │\n│  Oda Servisi       ✗            │\n│  Ücretsiz Wi-Fi    ✓            │\n│  Minibar           ✗            │\n└─────────────────────────────────┘</string>
 </resources>

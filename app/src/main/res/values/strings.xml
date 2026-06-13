@@ -6,17 +6,228 @@
     <string name="select_language">Select Language</string>
     <string name="turkish">Turkish</string>
     <string name="english">English</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="arabic">العربية</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="please_select_a_language_to_continue">Please select a language to continue</string>
-    <string name="deutsch">Deutsch</string>
-    <string name="arabic">العربية</string>
     <string name="sign_in">Sign In</string>
     <string name="new_user_sign_up">New user sign up</string>
-    <string name="register">register</string>
+    <string name="register">Register</string>
     <string name="name_surname">Name Surname</string>
     <string name="welcome_to_healify">Welcome to Healify</string>
     <string name="again_password">Again Password</string>
 
+    <!-- UI Labels -->
+    <string name="lbl_professional_cv">PROFESSIONAL BACKGROUND</string>
+    <string name="lbl_institutions">INSTITUTIONS</string>
+    <string name="lbl_publications">PUBLICATIONS &amp; RESEARCH</string>
+    <string name="btn_make_appointment">MAKE APPOINTMENT</string>
+    <string name="article_current_approaches">Current Approaches in %1$s</string>
+    <string name="article_international_journal">International Surgery Journal Publications</string>
+    <string name="institution_healify_center">Healify Aesthetic Center</string>
+
+    <!-- Category Names -->
+    <string name="cat_rinoplasti_name">Rhinoplasty</string>
+    <string name="cat_sac_ekimi_name">Hair Transplant</string>
+    <string name="cat_liposuction_name">Liposuction</string>
+    <string name="cat_goz_kapagi_name">Eyelid Aesthetics</string>
+    <string name="cat_yuz_germe_name">Face Lift</string>
+    <string name="cat_dudak_dolgusu_name">Lip Filler</string>
+
+    <!-- Category Specialists Labels -->
+    <string name="cat_rinoplasti_specialists">Rhinoplasty Specialists</string>
+    <string name="cat_sac_ekimi_specialists">Hair Transplant Specialists</string>
+    <string name="cat_liposuction_specialists">Liposuction Specialists</string>
+    <string name="cat_goz_kapagi_specialists">Eyelid Aesthetics Specialists</string>
+    <string name="cat_yuz_germe_specialists">Face Lift Specialists</string>
+    <string name="cat_dudak_dolgusu_specialists">Lip Filler Specialists</string>
+
+    <!-- Category About Labels -->
+    <string name="cat_rinoplasti_about">About Rhinoplasty</string>
+    <string name="cat_sac_ekimi_about">About Hair Transplant</string>
+    <string name="cat_liposuction_about">About Liposuction</string>
+    <string name="cat_goz_kapagi_about">About Eyelid Aesthetics</string>
+    <string name="cat_yuz_germe_about">About Face Lift</string>
+    <string name="cat_dudak_dolgusu_about">About Lip Filler</string>
+
+    <!-- Category Descriptions -->
+    <string name="cat_rinoplasti_desc">Our rhinoplasty procedures are meticulously planned by expert surgeons, delivering natural results that harmonize with your facial features while supporting optimal breathing function.</string>
+    <string name="cat_sac_ekimi_desc">Using the latest Sapphire FUE and DHI techniques, we provide our clients experiencing hair loss with permanent, dense, and completely natural-looking hair restoration.</string>
+    <string name="cat_liposuction_desc">With modern liposuction methods aimed at reshaping body contours, we help you eliminate stubborn regional fat deposits and achieve a slimmer silhouette.</string>
+    <string name="cat_goz_kapagi_desc">Our blepharoplasty procedures eliminate sagging, puffiness, and signs of aging around the eyes, giving your gaze a much more rested, youthful, and energetic expression.</string>
+    <string name="cat_yuz_germe_desc">Our facelift procedures minimize the effects of time by tightening the underlying tissues of the skin, defining the facial oval, and creating a natural rejuvenation effect.</string>
+    <string name="cat_dudak_dolgusu_desc">In our lip filler procedures tailored to your facial symmetry, high-quality hyaluronic acid formulas are used to achieve a natural and attractive appearance.</string>
+
+    <!-- Doctor Titles -->
+    <string name="title_kbb_uzmani">ENT Specialist</string>
+    <string name="title_estetik_cerrah">Aesthetic Surgeon</string>
+    <string name="title_dermatolog">Dermatologist</string>
+    <string name="title_medikal_estetik">Medical Aesthetics</string>
+    <string name="title_sac_cerrahi">Hair Surgeon</string>
+    <string name="title_plastik_cerrah">Plastic Surgeon</string>
+    <string name="title_goz_cerrahi">Eye Surgeon</string>
+
+    <!-- Doctor CVs – Rhinoplasty -->
+    <string name="cv_ahmet_yilmaz">Over 25 years of expertise in nasal surgery with a focus on piezo rhinoplasty and ethnic nose aesthetics. Has performed more than 3,000 rhinoplasty procedures with exceptional patient satisfaction.</string>
+    <string name="cv_selin_erdem">Internationally recognized specialist in revision rhinoplasty and piezo surgical techniques. Holds advanced certifications from rhinoplasty centers in Europe and the USA.</string>
+    <string name="cv_kerem_soylu">15 years of experience in both functional and aesthetic nasal surgery. Expert in correcting nasal deformities while simultaneously improving breathing function.</string>
+    <string name="cv_ece_kilic">Specialist in septoplasty and aesthetic nasal correction. Trained at leading plastic surgery clinics in Istanbul and Ankara. Known for precise, natural-looking nasal reshaping outcomes.</string>
+    <string name="cv_berk_ates">Master of open and closed rhinoplasty techniques with over 12 years of clinical practice. Focuses on patient-tailored nasal aesthetics with a strong emphasis on symmetry.</string>
+    <string name="cv_gizem_aksoy">Expert in secondary and revision rhinoplasty with a track record of over 500 complex revisions. Trained in France and Germany, brings international surgical standards to every procedure.</string>
+
+    <!-- Doctor CVs – Hair Transplant -->
+    <string name="cv_hakan_kaya">Pioneer in FUE hair transplant techniques with over 10 years of specialized dermatology practice. Expert in hair root analysis and personalized transplant planning for natural results.</string>
+    <string name="cv_leyla_aydin">Innovator in Sapphire DHI hair transplant methodology. Has trained international surgeons in advanced DHI techniques across Europe and the Middle East, with outstanding patient outcomes.</string>
+    <string name="cv_murat_demir">Specialist in natural hairline design for both men and women. Uses an artistic approach combined with surgical precision to achieve seamlessly natural-looking results.</string>
+    <string name="cv_serkan_yurt">Expert in micro FUE and hair mesotherapy. Has performed over 2,500 successful hair transplant procedures with minimal scarring and maximum graft survival rates.</string>
+    <string name="cv_nihan_polat">Specialist in female hair loss treatment and PRP therapy. Known for compassionate care and high success rates in female pattern baldness cases, with a personalized treatment approach.</string>
+    <string name="cv_emre_koc">Pioneer in robotic hair transplant technology. Combines robotic precision with human artistry for superior grafting outcomes and consistently high patient satisfaction.</string>
+
+    <!-- Doctor CVs – Liposuction -->
+    <string name="cv_ayse_akin">Expert in VASER liposuction and total body contouring. Certified by international plastic surgery boards in advanced body sculpting techniques with over 2,000 procedures performed.</string>
+    <string name="cv_canan_batur">Internationally certified in laser liposuction techniques. Has over 20 years of experience performing body sculpting procedures across Turkey and Europe with remarkable results.</string>
+    <string name="cv_firat_celik">Specialist in targeted regional fat removal combined with skin tightening procedures. Trained at top plastic surgery programs in Germany and the UK, bringing world-class expertise.</string>
+    <string name="cv_tuba_yildiz">Expert in high-definition liposuction and combined abdominoplasty procedures. Delivers natural-looking athletic contours with minimized recovery times.</string>
+    <string name="cv_bora_sahin">Develops comprehensive full-body liposuction treatment plans. Uses the latest ultrasonic and laser-assisted technologies for minimal recovery times and outstanding body contouring results.</string>
+    <string name="cv_asli_cetin">Specialist in fat transfer procedures including Brazilian butt lift and facial fat grafting. Over 15 years of experience in advanced body contouring and fat redistribution techniques.</string>
+
+    <!-- Doctor CVs – Eyelid Aesthetics -->
+    <string name="cv_zeynep_aras">Oculoplastic surgeon with expertise in eyelid ptosis correction and reconstructive eyelid surgery. Trained at Johns Hopkins Eye Institute. Performs over 300 procedures annually.</string>
+    <string name="cv_metehan_oz">20 years of blepharoplasty experience with over 4,000 eyelid surgeries performed. Renowned for natural-looking outcomes, minimal scarring, and quick recovery protocols.</string>
+    <string name="cv_seda_gunes">Expert in periocular rejuvenation including brow lifts, eyelid corrections, and laser resurfacing. Uses a holistic approach to restore youthful harmony to the entire eye area.</string>
+    <string name="cv_alper_kurt">Pioneer in laser-assisted blepharoplasty and ptosis correction. Combines traditional surgical skills with cutting-edge laser technology for superior and long-lasting results.</string>
+    <string name="cv_yasemin_dogan">Specialist in non-surgical eye rejuvenation including under-eye filler, Botox, and PRP therapy. Over 8 years of aesthetic medicine practice with thousands of satisfied patients.</string>
+    <string name="cv_cenk_arslan">Expert in comprehensive periocular rejuvenation combining surgical and non-surgical techniques. Trained at renowned European plastic surgery institutes with a patient-centered approach.</string>
+
+    <!-- Doctor CVs – Face Lift -->
+    <string name="cv_nilufer_yalin">World-renowned specialist in scarless deep-plane facelift surgery. Developed innovative techniques that minimize recovery time while maximizing facial rejuvenation outcomes.</string>
+    <string name="cv_baris_vural">Expert in facial oval definition and comprehensive lift operations. Has performed over 1,500 facelift procedures with outstanding patient satisfaction and natural-looking results.</string>
+    <string name="cv_deniz_tan">Minimally invasive facial rejuvenation specialist using thread lifts, radiofrequency, and HIFU technologies. Over 12 years of aesthetic practice with a focus on subtle, natural enhancement.</string>
+    <string name="cv_melis_celik">Specialist in S-lift and mini facelift procedures. Achieves dramatic yet natural results with significantly reduced recovery periods for a refreshed, youthful appearance.</string>
+    <string name="cv_ozan_kara">Expert in deep SMAS facelift techniques with 25 years of surgical experience. Actively trains younger surgeons in advanced facelift methodologies at international workshops.</string>
+    <string name="cv_eda_arslan">Pioneer in endoscopic facial rejuvenation techniques. Combines traditional artistry with modern technology for superior outcomes and consistently high patient satisfaction rates.</string>
+
+    <!-- Calendar Screen -->
+    <string name="cal_appointment_title">Appointment Selection</string>
+    <string name="cal_select_date">Select Date</string>
+    <string name="cal_select_time">Select Time</string>
+    <string name="cal_times_unavailable">Grey times are unavailable</string>
+    <string name="cal_your_selection">Your Selection</string>
+    <string name="cal_create_appointment">Create Appointment</string>
+    <string name="cal_appointment_booked">Appointment Booked!</string>
+    <string name="cal_recommended_stay">🏥  Recommended Stay Duration</string>
+    <string name="cal_plan_flight">✈   Plan Flight</string>
+    <string name="cal_prev_week">Previous week</string>
+    <string name="cal_next_week">Next week</string>
+    <string name="cal_morning">Morning</string>
+    <string name="cal_afternoon">Afternoon</string>
+    <string name="cal_time_not_selected">Time not selected</string>
+    <string name="cal_time_selected">Time: %1$s</string>
+    <string name="cal_please_select_date">Please select a date</string>
+    <string name="cal_please_select_time">Please select a time</string>
+    <string name="cal_stay_recommendation">For %1$s, it is recommended to stay in Turkey for %2$d–%3$d days after the appointment date.</string>
+
+    <!-- Flight Screen -->
+    <string name="flight_title">✈  Flight Planning</string>
+    <string name="flight_procedure_label">PROCEDURE</string>
+    <string name="flight_suggested_dates">SUGGESTED DATES</string>
+    <string name="flight_arrival">✈ ARRIVAL</string>
+    <string name="flight_return">✈ RETURN</string>
+    <string name="flight_istanbul">Istanbul (IST)</string>
+    <string name="flight_departure_title">Select Your Departure Point</string>
+    <string name="flight_search_note">Search will be done via main airport</string>
+    <string name="flight_search_btn">Search Flights</string>
+    <string name="flight_kayak_note">Search will open via Kayak.com.tr</string>
+    <string name="flight_transfer_hotel_btn">🚗  Plan Transfer &amp; Hotel</string>
+    <string name="flight_stay_info">For this procedure, it is recommended to stay in Turkey for\n%1$d–%2$d days after the appointment date.</string>
+
+    <!-- Transfer Screen -->
+    <string name="transfer_header">🚗  Hospital Transfer</string>
+    <string name="transfer_free_service">You can benefit from our private, comfortable and free transfer service from the airport to our clinic.</string>
+    <string name="transfer_pickup_date">PICKUP DATE</string>
+    <string name="transfer_airport_route">Istanbul Airport → Healify Aesthetic Center</string>
+    <string name="transfer_landing_time">YOUR LANDING TIME</string>
+    <string name="transfer_touch_to_select">Touch to select</string>
+    <string name="transfer_hour">HOUR</string>
+    <string name="transfer_min">MIN.</string>
+    <string name="transfer_pick_time_btn">⏰   Select Time</string>
+    <string name="transfer_baggage_note">+45 minutes added for baggage and customs clearance</string>
+    <string name="transfer_request_btn">Request Transfer</string>
+    <string name="transfer_confirmed">✓  Your Transfer is Confirmed!</string>
+    <string name="transfer_driver">DRIVER</string>
+    <string name="transfer_vehicle">VEHICLE</string>
+    <string name="transfer_plate">PLATE</string>
+    <string name="transfer_pickup_label">PICKUP</string>
+    <string name="transfer_destination">DESTINATION</string>
+    <string name="transfer_to_hotel_btn">Proceed to Hotel Selection  →</string>
+    <string name="transfer_destination_name">Healify Aesthetic Center</string>
+    <string name="transfer_pickup_info">Istanbul Airport – International Arrivals\nEstimated pickup time: %1$s</string>
+
+    <!-- Hotel Screen -->
+    <string name="hotel_header">🏨  Accommodation Selection</string>
+    <string name="hotel_near_clinic">Hotels Near Our Clinic</string>
+    <string name="hotel_recommended">★  RECOMMENDED HOTEL</string>
+    <string name="hotel_per_night">/ night</string>
+    <string name="hotel_luxury_distance">2 minute walk to clinic</string>
+    <string name="hotel_standard_distance">10 minute walk to clinic</string>
+    <string name="hotel_included_services">INCLUDED SERVICES</string>
+    <string name="hotel_luxury_services">✓  Breakfast included\n✓  SPA &amp; Wellness center\n✓  Swimming pool\n✓  Clinic shuttle service\n✓  24-hour room service\n✓  Free Wi-Fi\n✓  Air conditioning and minibar</string>
+    <string name="hotel_standard_services">✓  Breakfast included\n✓  Free Wi-Fi\n✓  24-hour reception\n✓  Air conditioning</string>
+    <string name="hotel_select_btn">Select This Hotel</string>
+    <string name="hotel_selected_btn">✓ Selected</string>
+    <string name="hotel_reservation_title">Reservation Confirmed!</string>
+    <string name="hotel_selection_saved">Your selection has been saved.</string>
+    <string name="hotel_go_summary_btn">Go to Reservation Summary  →</string>
+    <string name="hotel_compare_btn">Compare Hotels</string>
+    <string name="hotel_compare_title">Hotel Comparison</string>
+    <string name="hotel_compare_content">┌─────────────────────────────────┐\n│        HEALIFY SUITE &amp; SPA      │\n│   ★★★★★  •  €150/night          │\n│   2 min walk to clinic          │\n├─────────────────────────────────┤\n│  Breakfast         ✓            │\n│  SPA &amp; Wellness    ✓            │\n│  Swimming pool     ✓            │\n│  Clinic shuttle    ✓            │\n│  Room service      ✓            │\n│  Free Wi-Fi        ✓            │\n│  Minibar           ✓            │\n├─────────────────────────────────┤\n│         CITY INN ISTANBUL       │\n│   ★★★  •  €75/night             │\n│   10 min walk to clinic         │\n├─────────────────────────────────┤\n│  Breakfast         ✓            │\n│  SPA &amp; Wellness    ✗            │\n│  Swimming pool     ✗            │\n│  Clinic shuttle    ✗            │\n│  Room service      ✗            │\n│  Free Wi-Fi        ✓            │\n│  Minibar           ✗            │\n└─────────────────────────────────┘</string>
+    <string name="hotel_compare_subtitle">Price, amenities &amp; distance comparison</string>
+    <string name="compare_breakfast">Breakfast</string>
+    <string name="compare_spa">SPA &amp; Wellness</string>
+    <string name="compare_pool">Swimming Pool</string>
+    <string name="compare_shuttle">Clinic Shuttle</string>
+    <string name="compare_room_service">Room Service</string>
+    <string name="compare_wifi">Wi-Fi</string>
+    <string name="compare_minibar">Minibar</string>
+    <string name="compare_close">Close</string>
+
+    <!-- Summary Screen -->
+    <string name="summary_header_label">📋  Booking Summary</string>
+    <string name="summary_all_details">All Details</string>
+    <string name="summary_section_appointment">🏥  PROCEDURE &amp; APPOINTMENT</string>
+    <string name="summary_section_accommodation">🏨  ACCOMMODATION</string>
+    <string name="summary_section_transfer">🚗  TRANSFER</string>
+    <string name="summary_section_payment">💳  PAYMENT SUMMARY</string>
+    <string name="summary_lbl_doctor">Doctor</string>
+    <string name="summary_lbl_procedure">Procedure</string>
+    <string name="summary_lbl_date">Date</string>
+    <string name="summary_lbl_time">Time</string>
+    <string name="summary_lbl_hotel">Hotel</string>
+    <string name="summary_lbl_checkin">Check-in</string>
+    <string name="summary_lbl_checkout">Check-out</string>
+    <string name="summary_lbl_stay">Duration</string>
+    <string name="summary_stay_nights">%1$d nights</string>
+    <string name="summary_lbl_driver">Driver</string>
+    <string name="summary_lbl_vehicle">Vehicle</string>
+    <string name="summary_lbl_plate">Plate</string>
+    <string name="summary_lbl_landing">Landing time</string>
+    <string name="summary_lbl_pickup">Pickup time</string>
+    <string name="summary_lbl_hotel_cost">Accommodation</string>
+    <string name="summary_hotel_cost_format">€%1$d × %2$d nights = €%3$d</string>
+    <string name="summary_lbl_transfer_cost">Transfer</string>
+    <string name="summary_transfer_free">Free</string>
+    <string name="summary_lbl_deposit">Procedure deposit</string>
+    <string name="summary_total">TOTAL</string>
+    <string name="summary_pay_btn">💳   Proceed to Payment</string>
+    <string name="summary_update_btn">✏  Update</string>
+
+    <!-- Doctor CVs – Lip Filler -->
+    <string name="cv_burcu_sen">Specialist in lip volumizing procedures using golden ratio principles. Expert in hyaluronic acid fillers and precision lip augmentation for perfectly balanced, natural results.</string>
+    <string name="cv_caner_ege">Artist-surgeon specializing in natural lip design using premium hyaluronic acid products. Known for perfectly balanced and natural-looking results that enhance each patient\'s unique features.</string>
+    <string name="cv_irem_gur">Dermatologist specializing in lip contour definition and aesthetic filler treatments. Over 10 years of experience in advanced injection techniques with consistently outstanding outcomes.</string>
+    <string name="cv_sena_yildirim">Specialist in the Russian Lip technique for enhanced lip projection. Uses precision injection methodology for refined, natural-looking lip augmentation tailored to facial harmony.</string>
+    <string name="cv_tarik_aydin">Expert in facial balance optimization through strategic lip filler placement. Dermatologist with extensive training in aesthetic injection techniques and facial proportion analysis.</string>
+    <string name="cv_pinar_karahan">Specialist in permanent lip contour procedures and M-shape lip design. Combines medical expertise with artistic vision for ideal lip aesthetics and long-lasting, beautiful results.</string>
 </resources>

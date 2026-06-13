@@ -5,7 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.util.Locale
 
 class DateChipAdapter(
     private val dates: List<Calendar>,
@@ -13,8 +15,6 @@ class DateChipAdapter(
 ) : RecyclerView.Adapter<DateChipAdapter.DateViewHolder>() {
 
     private var selectedIndex = -1
-
-    private val dayNames = arrayOf("Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt")
 
     inner class DateViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvDayName: TextView = itemView.findViewById(R.id.tvDayName)
@@ -37,7 +37,8 @@ class DateChipAdapter(
                 date.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR)
         val isSelected = position == selectedIndex
 
-        holder.tvDayName.text = dayNames[dayOfWeek - 1]
+        val dayFmt = SimpleDateFormat("EEE", Locale.getDefault())
+        holder.tvDayName.text = dayFmt.format(date.time).uppercase(Locale.getDefault())
         holder.tvDayNumber.text = dayNumber.toString()
 
         when {

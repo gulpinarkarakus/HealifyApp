@@ -3,8 +3,8 @@ package com.example.healifyapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class CardAdapter(
@@ -25,13 +25,9 @@ class CardAdapter(
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
         val item = list[position]
-
-        holder.title.text = item.title
+        holder.title.text = holder.itemView.context.getString(item.titleResId)
         holder.image.setImageResource(item.imageResId)
-
-        holder.itemView.setOnClickListener {
-            onItemClick(item)
-        }
+        holder.itemView.setOnClickListener { onItemClick(item) }
     }
 
     override fun getItemCount(): Int = list.size

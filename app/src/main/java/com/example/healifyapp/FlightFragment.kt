@@ -27,15 +27,15 @@ class FlightFragment : Fragment(R.layout.fragment_flight) {
         val stayDays = procedureStayDays[category] ?: Pair(5, 7)
 
         view.findViewById<TextView>(R.id.tvFlightDoctorName).text = args.doctorName
-        view.findViewById<TextView>(R.id.tvFlightCategory).text = category
+        view.findViewById<TextView>(R.id.tvFlightCategory).text = getString(getCategoryNameResId(category))
         view.findViewById<TextView>(R.id.tvStayInfo).text =
-            "Bu işlem için randevu tarihinden itibaren\n${stayDays.first}-${stayDays.second} gün Türkiye'de kalmanız önerilir."
+            getString(R.string.flight_stay_info, stayDays.first, stayDays.second)
 
         val appointmentCal = Calendar.getInstance().apply { timeInMillis = args.appointmentMillis }
         val arrivalCal = (appointmentCal.clone() as Calendar).apply { add(Calendar.DAY_OF_MONTH, -1) }
         val returnCal = (appointmentCal.clone() as Calendar).apply { add(Calendar.DAY_OF_MONTH, stayDays.second) }
 
-        val displayFmt = SimpleDateFormat("dd MMM yyyy", Locale("tr"))
+        val displayFmt = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
         view.findViewById<TextView>(R.id.tvArrivalDate).text = displayFmt.format(arrivalCal.time)
         view.findViewById<TextView>(R.id.tvReturnDate).text = displayFmt.format(returnCal.time)
 

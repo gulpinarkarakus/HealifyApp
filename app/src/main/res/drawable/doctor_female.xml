@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Blue circle background -->
+    <path
+        android:fillColor="#3A7BD5"
+        android:pathData="M 0,50 A 50,50 0 1 0 100,50 A 50,50 0 1 0 0,50 Z" />
+
+    <!-- Brown hair bun at top -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M 43,12 A 7,7 0 1 0 57,12 A 7,7 0 1 0 43,12 Z" />
+
+    <!-- Brown hair behind head (drawn before head to be covered partially) -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M 29,40 A 21,22 0 1 0 71,40 A 21,22 0 1 0 29,40 Z" />
+
+    <!-- White head (covers hair below hair-line level) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 33,40 A 17,17 0 1 0 67,40 A 17,17 0 1 0 33,40 Z" />
+
+    <!-- Hair connecting bun to head (strand) -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M 45,19 Q 43,22 44,25 Q 50,23 56,25 Q 57,22 55,19 Q 50,17 45,19 Z" />
+
+    <!-- White lab coat body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 14,100 L 19,60 Q 33,57 50,57 Q 67,57 81,60 L 86,100 Z" />
+
+    <!-- Coat lapel left -->
+    <path
+        android:fillColor="#D0E6FF"
+        android:pathData="M 50,62 L 41,84 L 37,100 L 50,100 Z" />
+
+    <!-- Coat lapel right -->
+    <path
+        android:fillColor="#D0E6FF"
+        android:pathData="M 50,62 L 59,84 L 63,100 L 50,100 Z" />
+
+    <!-- Green scrub collar (feminine touch) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M 50,62 L 45,70 L 50,68 L 55,70 Z" />
+
+    <!-- Stethoscope tube -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#B3D4FF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M 39,59 Q 31,70 31,79 Q 31,88 40,89 Q 46,90 47,84 Q 48,78 50,76 Q 52,78 53,84 Q 54,90 60,89 Q 69,88 69,79 Q 69,70 61,59" />
+
+    <!-- Stethoscope disc -->
+    <path
+        android:fillColor="#B3D4FF"
+        android:pathData="M 46,84 A 4,4 0 1 0 54,84 A 4,4 0 1 0 46,84 Z" />
+
+</vector>

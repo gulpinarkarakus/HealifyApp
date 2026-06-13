@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#F8F9FA">
+    android:background="#F8F9FA"
+    android:layoutDirection="locale">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -33,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:orientation="vertical"
+            android:gravity="start"
             app:layout_constraintBottom_toBottomOf="@id/cardProfile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/cardProfile"
@@ -40,21 +42,21 @@
 
             <TextView
                 android:id="@+id/bookingDoctorName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Prof. Dr. Ahmet Yılmaz"
                 android:textColor="#1A1A1A"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textAlignment="viewStart" />
 
             <TextView
                 android:id="@+id/bookingDoctorTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="KBB Uzmanı"
                 android:textColor="#3A7BD5"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textAlignment="viewStart" />
         </LinearLayout>
 
         <View
@@ -70,11 +72,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="PROFESYONEL ÖZGEÇMİŞ"
+            android:text="@string/lbl_professional_cv"
             android:textColor="#3A7BD5"
             android:textSize="14sp"
             android:textStyle="bold"
             android:letterSpacing="0.1"
+            android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@id/divider" />
 
         <TextView
@@ -83,9 +86,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:lineSpacingExtra="8dp"
-            android:text="Doktorun detaylı geçmişi buraya gelecek..."
             android:textColor="#444444"
             android:textSize="16sp"
+            android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@id/lblCv" />
 
         <TextView
@@ -93,11 +96,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:text="ÇALIŞTIĞI KURUMLAR"
+            android:text="@string/lbl_institutions"
             android:textColor="#3A7BD5"
             android:textSize="14sp"
             android:textStyle="bold"
             android:letterSpacing="0.1"
+            android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@id/bookingDoctorCV" />
 
         <TextView
@@ -106,9 +110,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:lineSpacingExtra="6dp"
-            android:text="• Kurum Bilgisi"
             android:textColor="#444444"
             android:textSize="16sp"
+            android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@id/lblInstitutions" />
 
         <TextView
@@ -116,11 +120,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:text="YAYINLAR VE ARAŞTIRMALAR"
+            android:text="@string/lbl_publications"
             android:textColor="#3A7BD5"
             android:textSize="14sp"
             android:textStyle="bold"
             android:letterSpacing="0.1"
+            android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@id/bookingInstitutions" />
 
         <TextView
@@ -129,9 +134,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:lineSpacingExtra="6dp"
-            android:text="• Makale Bilgisi"
             android:textColor="#444444"
             android:textSize="16sp"
+            android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@id/lblArticles" />
 
         <Button
@@ -140,7 +145,7 @@
             android:layout_height="65dp"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="20dp"
-            android:text="Randevu Al"
+            android:text="@string/btn_make_appointment"
             android:textAllCaps="true"
             android:textSize="18sp"
             android:textStyle="bold"

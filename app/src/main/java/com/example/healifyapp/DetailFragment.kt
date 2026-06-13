@@ -14,33 +14,24 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val selectedCategory = args.doctorName
-
-        setupUI(view, selectedCategory)
-
-        setupRecyclerView(view, selectedCategory)
+        val category = args.doctorName
+        setupUI(view, category)
+        setupRecyclerView(view, category)
     }
 
     private fun setupUI(view: View, category: String) {
-        val title = view.findViewById<TextView>(R.id.detailTitle)
-        val subtitle = view.findViewById<TextView>(R.id.categorySubtitle)
-        val description = view.findViewById<TextView>(R.id.categoryDescriptionText)
-
-        title.text = "$category Uzmanları"
-        subtitle.text = "$category Hakkında"
-
-        description.text = categoryDescriptions[category] ?: "Uzman doktorlarımız listelenmiştir."
+        view.findViewById<TextView>(R.id.detailTitle).text =
+            getString(getCategorySpecialistsResId(category))
+        view.findViewById<TextView>(R.id.categorySubtitle).text =
+            getString(getCategoryAboutResId(category))
+        view.findViewById<TextView>(R.id.categoryDescriptionText).text =
+            getString(getCategoryDescResId(category))
     }
 
     private fun setupRecyclerView(view: View, category: String) {
-        val filteredDoctors = allDoctors.filter { it.category == category }
-
-        val recyclerView = view.findViewById<RecyclerView>(R.id.doctorRecyclerView)
-
-        recyclerView.adapter = DoctorAdapter(filteredDoctors) { clickedDoctor ->
-            onDoctorSelected(clickedDoctor)
-        }
+        val filtered = allDoctors.filter { it.category == category }
+        view.findViewById<RecyclerView>(R.id.doctorRecyclerView).adapter =
+            DoctorAdapter(filtered) { doctor -> onDoctorSelected(doctor) }
     }
 
     private fun onDoctorSelected(doctor: DoctorProfileBooking) {
