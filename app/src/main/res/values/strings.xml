@@ -193,6 +193,31 @@
     <string name="compare_minibar">Minibar</string>
     <string name="compare_close">Close</string>
 
+    <!-- Payment Screen -->
+    <string name="payment_secure_label">🔒  Secure Payment</string>
+    <string name="payment_ssl_note">Protected with 256-bit SSL</string>
+    <string name="payment_amount_label">AMOUNT DUE</string>
+    <string name="payment_card_info_label">CARD DETAILS</string>
+    <string name="payment_card_number">Card Number</string>
+    <string name="payment_card_holder">Cardholder Name</string>
+    <string name="payment_card_holder_hint">FULL NAME</string>
+    <string name="payment_expiry">Expiry Date</string>
+    <string name="payment_cvv">CVV</string>
+    <string name="payment_pay_btn">Complete Payment</string>
+    <string name="payment_err_card">Please enter a card number</string>
+    <string name="payment_err_holder">Please enter the cardholder name</string>
+    <string name="payment_err_expiry">Please enter the expiry date</string>
+    <string name="payment_err_cvv">Please enter the CVV</string>
+    <string name="payment_success_title">Payment Successful!</string>
+    <string name="payment_success_subtitle">Your reservation has been confirmed.</string>
+    <string name="payment_success_ref_label">BOOKING REFERENCE</string>
+    <string name="payment_success_doctor_label">Doctor</string>
+    <string name="payment_success_date_label">Appointment</string>
+    <string name="payment_success_hotel_label">Hotel</string>
+    <string name="payment_success_amount_label">Total Paid</string>
+    <string name="payment_success_note">A confirmation will be sent to you.\nWe wish you a healthy journey! 🌟</string>
+    <string name="payment_home_btn">Return to Home</string>
+
     <!-- Summary Screen -->
     <string name="summary_header_label">📋  Booking Summary</string>
     <string name="summary_all_details">All Details</string>

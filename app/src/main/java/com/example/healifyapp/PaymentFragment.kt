@@ -9,7 +9,12 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
+import kotlin.random.Random
 
 class PaymentFragment : Fragment(R.layout.fragment_payment) {
 
@@ -20,11 +25,12 @@ class PaymentFragment : Fragment(R.layout.fragment_payment) {
         val total = s.hotelPricePerNight * s.stayDays + 500
         view.findViewById<TextView>(R.id.tvPaymentAmount).text = "€$total"
 
-        val etCard = view.findViewById<TextInputEditText>(R.id.etCardNumber)
+        val etCard   = view.findViewById<TextInputEditText>(R.id.etCardNumber)
         val etHolder = view.findViewById<TextInputEditText>(R.id.etCardHolder)
         val etExpiry = view.findViewById<TextInputEditText>(R.id.etExpiry)
-        val etCvv = view.findViewById<TextInputEditText>(R.id.etCvv)
-        val btnPay = view.findViewById<Button>(R.id.btnPay)
+        val etCvv    = view.findViewById<TextInputEditText>(R.id.etCvv)
+        val btnPay   = view.findViewById<Button>(R.id.btnPay)
+        val layoutForm    = view.findViewById<LinearLayout>(R.id.layoutPaymentForm)
         val layoutSuccess = view.findViewById<LinearLayout>(R.id.layoutPaySuccess)
 
         etCard.addTextChangedListener(object : TextWatcher {
@@ -57,21 +63,56 @@ class PaymentFragment : Fragment(R.layout.fragment_payment) {
 
         btnPay.setOnClickListener {
             val cardNum = etCard.text.toString().filter { it.isDigit() }
-            val holder = etHolder.text.toString().trim()
-            val expiry = etExpiry.text.toString().trim()
-            val cvv = etCvv.text.toString().trim()
+            val holder  = etHolder.text.toString().trim()
+            val expiry  = etExpiry.text.toString().trim()
+            val cvv     = etCvv.text.toString().trim()
 
             when {
-                cardNum.length < 16 -> Toast.makeText(requireContext(), "Geçerli bir kart numarası girin", Toast.LENGTH_SHORT).show()
-                holder.isEmpty() -> Toast.makeText(requireContext(), "Kart sahibinin adını girin", Toast.LENGTH_SHORT).show()
-                expiry.length < 5 -> Toast.makeText(requireContext(), "Son kullanma tarihini girin (MM/YY)", Toast.LENGTH_SHORT).show()
-                cvv.length < 3 -> Toast.makeText(requireContext(), "CVV kodunu girin", Toast.LENGTH_SHORT).show()
+                cardNum.isEmpty() -> Toast.makeText(requireContext(), getString(R.string.payment_err_card),   Toast.LENGTH_SHORT).show()
+                holder.isEmpty()  -> Toast.makeText(requireContext(), getString(R.string.payment_err_holder), Toast.LENGTH_SHORT).show()
+                expiry.isEmpty()  -> Toast.makeText(requireContext(), getString(R.string.payment_err_expiry), Toast.LENGTH_SHORT).show()
+                cvv.isEmpty()     -> Toast.makeText(requireContext(), getString(R.string.payment_err_cvv),    Toast.LENGTH_SHORT).show()
                 else -> {
-                    btnPay.isEnabled = false
-                    btnPay.alpha = 0.4f
-                    layoutSuccess.visibility = View.VISIBLE
+                    showSuccess(view, layoutForm, layoutSuccess, total)
                 }
             }
+        }
+    }
+
+    private fun showSuccess(
+        view: View,
+        layoutForm: LinearLayout,
+        layoutSuccess: LinearLayout,
+        total: Int
+    ) {
+        val s = BookingState
+        layoutForm.visibility = View.GONE
+        layoutSuccess.visibility = View.VISIBLE
+
+        // Random 6-char booking reference
+        val ref = (1..6).map { "ABCDEFGHJKLMNPQRSTUVWXYZ23456789".random() }.joinToString("")
+        view.findViewById<TextView>(R.id.tvBookingRef).text = "HLF-$ref"
+
+        // Doctor
+        view.findViewById<TextView>(R.id.tvSuccessDoctor).text = s.doctorName
+
+        // Appointment date + time
+        val dateFmt = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
+        val apptCal = Calendar.getInstance().apply { timeInMillis = s.appointmentDateMillis }
+        view.findViewById<TextView>(R.id.tvSuccessDate).text =
+            "${dateFmt.format(apptCal.time)}  •  ${s.appointmentTime}"
+
+        // Hotel
+        view.findViewById<TextView>(R.id.tvSuccessHotel).text = s.hotelName
+
+        // Amount
+        view.findViewById<TextView>(R.id.tvSuccessAmount).text = "€$total"
+
+        // Home button
+        view.findViewById<Button>(R.id.btnGoHome).setOnClickListener {
+            findNavController().navigate(
+                PaymentFragmentDirections.actionPaymentFragmentToHomeFragment()
+            )
         }
     }
 }

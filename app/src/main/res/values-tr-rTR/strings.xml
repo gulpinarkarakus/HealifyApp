@@ -200,6 +200,31 @@
     <string name="compare_minibar">Minibar</string>
     <string name="compare_close">Kapat</string>
 
+    <!-- Ödeme Sayfası -->
+    <string name="payment_secure_label">🔒  Güvenli Ödeme</string>
+    <string name="payment_ssl_note">256-bit SSL ile korunmaktadır</string>
+    <string name="payment_amount_label">ÖDENECEK TUTAR</string>
+    <string name="payment_card_info_label">KART BİLGİLERİ</string>
+    <string name="payment_card_number">Kart Numarası</string>
+    <string name="payment_card_holder">Kart Sahibinin Adı</string>
+    <string name="payment_card_holder_hint">AD SOYAD</string>
+    <string name="payment_expiry">Son Kullanma</string>
+    <string name="payment_cvv">CVV</string>
+    <string name="payment_pay_btn">Ödemeyi Tamamla</string>
+    <string name="payment_err_card">Kart numarası giriniz</string>
+    <string name="payment_err_holder">Kart sahibinin adını giriniz</string>
+    <string name="payment_err_expiry">Son kullanma tarihini giriniz</string>
+    <string name="payment_err_cvv">CVV kodunu giriniz</string>
+    <string name="payment_success_title">Ödeme Alındı!</string>
+    <string name="payment_success_subtitle">Rezervasyonunuz onaylanmıştır.</string>
+    <string name="payment_success_ref_label">REZERVASYON KODU</string>
+    <string name="payment_success_doctor_label">Doktor</string>
+    <string name="payment_success_date_label">Randevu</string>
+    <string name="payment_success_hotel_label">Otel</string>
+    <string name="payment_success_amount_label">Ödenen Tutar</string>
+    <string name="payment_success_note">Onay bilgileri tarafınıza iletilecektir.\nSağlıklı yolculuklar dileriz! 🌟</string>
+    <string name="payment_home_btn">Ana Sayfaya Dön</string>
+
     <!-- Özet Sayfası -->
     <string name="summary_header_label">📋  Rezervasyon Özeti</string>
     <string name="summary_all_details">Tüm Detaylar</string>

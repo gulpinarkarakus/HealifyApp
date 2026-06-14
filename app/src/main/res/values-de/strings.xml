@@ -200,6 +200,31 @@
     <string name="compare_minibar">Minibar</string>
     <string name="compare_close">Schließen</string>
 
+    <!-- Zahlung -->
+    <string name="payment_secure_label">🔒  Sichere Zahlung</string>
+    <string name="payment_ssl_note">Geschützt mit 256-Bit-SSL</string>
+    <string name="payment_amount_label">ZU ZAHLEN</string>
+    <string name="payment_card_info_label">KARTENDETAILS</string>
+    <string name="payment_card_number">Kartennummer</string>
+    <string name="payment_card_holder">Karteninhaber</string>
+    <string name="payment_card_holder_hint">VOR- UND NACHNAME</string>
+    <string name="payment_expiry">Ablaufdatum</string>
+    <string name="payment_cvv">CVV</string>
+    <string name="payment_pay_btn">Zahlung abschließen</string>
+    <string name="payment_err_card">Bitte Kartennummer eingeben</string>
+    <string name="payment_err_holder">Bitte Karteninhaber eingeben</string>
+    <string name="payment_err_expiry">Bitte Ablaufdatum eingeben</string>
+    <string name="payment_err_cvv">Bitte CVV eingeben</string>
+    <string name="payment_success_title">Zahlung erfolgreich!</string>
+    <string name="payment_success_subtitle">Ihre Buchung wurde bestätigt.</string>
+    <string name="payment_success_ref_label">BUCHUNGSNUMMER</string>
+    <string name="payment_success_doctor_label">Arzt</string>
+    <string name="payment_success_date_label">Termin</string>
+    <string name="payment_success_hotel_label">Hotel</string>
+    <string name="payment_success_amount_label">Bezahlter Betrag</string>
+    <string name="payment_success_note">Eine Bestätigung wird Ihnen zugesandt.\nWir wünschen Ihnen eine gesunde Reise! 🌟</string>
+    <string name="payment_home_btn">Zur Startseite</string>
+
     <!-- Zusammenfassung -->
     <string name="summary_header_label">📋  Buchungsübersicht</string>
     <string name="summary_all_details">Alle Details</string>

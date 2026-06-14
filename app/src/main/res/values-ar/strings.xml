@@ -200,6 +200,31 @@
     <string name="compare_minibar">مينيبار</string>
     <string name="compare_close">إغلاق</string>
 
+    <!-- الدفع -->
+    <string name="payment_secure_label">🔒  دفع آمن</string>
+    <string name="payment_ssl_note">محمي بتشفير SSL 256 بت</string>
+    <string name="payment_amount_label">المبلغ المستحق</string>
+    <string name="payment_card_info_label">تفاصيل البطاقة</string>
+    <string name="payment_card_number">رقم البطاقة</string>
+    <string name="payment_card_holder">اسم حامل البطاقة</string>
+    <string name="payment_card_holder_hint">الاسم الكامل</string>
+    <string name="payment_expiry">تاريخ الانتهاء</string>
+    <string name="payment_cvv">رمز CVV</string>
+    <string name="payment_pay_btn">إتمام الدفع</string>
+    <string name="payment_err_card">يرجى إدخال رقم البطاقة</string>
+    <string name="payment_err_holder">يرجى إدخال اسم حامل البطاقة</string>
+    <string name="payment_err_expiry">يرجى إدخال تاريخ الانتهاء</string>
+    <string name="payment_err_cvv">يرجى إدخال رمز CVV</string>
+    <string name="payment_success_title">تمت الدفع بنجاح!</string>
+    <string name="payment_success_subtitle">تم تأكيد حجزك.</string>
+    <string name="payment_success_ref_label">رمز الحجز</string>
+    <string name="payment_success_doctor_label">الطبيب</string>
+    <string name="payment_success_date_label">الموعد</string>
+    <string name="payment_success_hotel_label">الفندق</string>
+    <string name="payment_success_amount_label">المبلغ المدفوع</string>
+    <string name="payment_success_note">سيتم إرسال تأكيد الحجز إليك.\nنتمنى لك رحلة صحية! 🌟</string>
+    <string name="payment_home_btn">العودة إلى الرئيسية</string>
+
     <!-- ملخص الحجز -->
     <string name="summary_header_label">📋  ملخص الحجز</string>
     <string name="summary_all_details">جميع التفاصيل</string>
